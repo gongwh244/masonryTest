@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FB2FA0021BE999CB008B22F6"
-               BuildableName = "masonryTest.app"
+               BuildableName = "myApp.app"
                BlueprintName = "masonryTest"
                ReferencedContainer = "container:masonryTest.xcodeproj">
             </BuildableReference>
@@ -53,7 +53,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FB2FA0021BE999CB008B22F6"
-            BuildableName = "masonryTest.app"
+            BuildableName = "myApp.app"
             BlueprintName = "masonryTest"
             ReferencedContainer = "container:masonryTest.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FB2FA0021BE999CB008B22F6"
-            BuildableName = "masonryTest.app"
+            BuildableName = "myApp.app"
             BlueprintName = "masonryTest"
             ReferencedContainer = "container:masonryTest.xcodeproj">
          </BuildableReference>
@@ -95,7 +95,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FB2FA0021BE999CB008B22F6"
-            BuildableName = "masonryTest.app"
+            BuildableName = "myApp.app"
             BlueprintName = "masonryTest"
             ReferencedContainer = "container:masonryTest.xcodeproj">
          </BuildableReference>
