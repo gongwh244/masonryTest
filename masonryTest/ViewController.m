@@ -41,6 +41,7 @@
         make.left.equalTo(superView.mas_left).offset(pad);
         make.bottom.equalTo(blueView.mas_top).offset(-pad);
         make.right.equalTo(greenView.mas_left).offset(-pad);
+        
         make.width.equalTo(greenView.mas_width);
         make.height.equalTo(blueView.mas_height);
     }];
@@ -50,6 +51,7 @@
         make.left.equalTo(redView.mas_right).offset(pad);
         make.bottom.equalTo(blueView.mas_top).offset(-pad);
         make.right.equalTo(superView.mas_right).offset(-pad);
+        
         make.width.equalTo(redView.mas_width);
         make.height.equalTo(blueView.mas_height);
     }];

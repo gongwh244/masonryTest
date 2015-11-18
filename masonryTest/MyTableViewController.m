@@ -10,6 +10,8 @@
 #import "ViewController.h"
 #import "updataViewController.h"
 #import "remakeViewController.h"
+#import "constantViewController.h"
+#import "marginViewController.h"
 
 @interface MyTableViewController ()
 
@@ -23,7 +25,7 @@
     [super viewDidLoad];
     self.navigationController.navigationBar.translucent = NO;
     self.title = @"RootVC";
-    _dataArray = @[@"base",@"update",@"remake",@"4",@"5",@"6"];
+    _dataArray = @[@"base",@"update",@"remake",@"constant",@"martin",@"6"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -62,6 +64,12 @@
         [self.navigationController pushViewController:vc animated:YES];
     }else if (indexPath.row == 2){
         remakeViewController *vc = [[remakeViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row == 3){
+        constantViewController *vc = [constantViewController new];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row == 4){
+        marginViewController *vc = [marginViewController new];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }
