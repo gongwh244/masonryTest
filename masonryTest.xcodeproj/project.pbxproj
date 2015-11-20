@@ -31,6 +31,7 @@
 		FB4821681BFC261E00139B82 /* marginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4821671BFC261E00139B82 /* marginViewController.m */; };
 		FB5178E41BFB217200ABAF40 /* updataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5178E31BFB217200ABAF40 /* updataViewController.m */; };
 		FB5178E71BFB2C1900ABAF40 /* remakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5178E61BFB2C1900ABAF40 /* remakeViewController.m */; };
+		FBE4299B1BFF16FB007EE1E5 /* arrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE4299A1BFF16FB007EE1E5 /* arrayViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,8 @@
 		FB5178E31BFB217200ABAF40 /* updataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = updataViewController.m; sourceTree = "<group>"; };
 		FB5178E51BFB2C1900ABAF40 /* remakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = remakeViewController.h; sourceTree = "<group>"; };
 		FB5178E61BFB2C1900ABAF40 /* remakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = remakeViewController.m; sourceTree = "<group>"; };
+		FBE429991BFF16FB007EE1E5 /* arrayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arrayViewController.h; sourceTree = "<group>"; };
+		FBE4299A1BFF16FB007EE1E5 /* arrayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = arrayViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +168,8 @@
 				FB4821641BFC19F000139B82 /* constantViewController.m */,
 				FB4821661BFC261E00139B82 /* marginViewController.h */,
 				FB4821671BFC261E00139B82 /* marginViewController.m */,
+				FBE429991BFF16FB007EE1E5 /* arrayViewController.h */,
+				FBE4299A1BFF16FB007EE1E5 /* arrayViewController.m */,
 				FB2FA0391BE99AE6008B22F6 /* MyTableViewController.h */,
 				FB2FA03A1BE99AE6008B22F6 /* MyTableViewController.m */,
 				FB2FA00F1BE999CB008B22F6 /* Main.storyboard */,
@@ -378,6 +383,7 @@
 				FB2FA0631BE99ECC008B22F6 /* ViewController+MASAdditions.m in Sources */,
 				FB4821681BFC261E00139B82 /* marginViewController.m in Sources */,
 				FB5178E71BFB2C1900ABAF40 /* remakeViewController.m in Sources */,
+				FBE4299B1BFF16FB007EE1E5 /* arrayViewController.m in Sources */,
 				FB2FA05D1BE99ECC008B22F6 /* MASLayoutConstraint.m in Sources */,
 				FB2FA0601BE99ECC008B22F6 /* NSArray+MASAdditions.m in Sources */,
 				FB2FA05F1BE99ECC008B22F6 /* MASViewConstraint.m in Sources */,

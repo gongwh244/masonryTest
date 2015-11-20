@@ -12,6 +12,7 @@
 #import "remakeViewController.h"
 #import "constantViewController.h"
 #import "marginViewController.h"
+#import "arrayViewController.h"
 
 @interface MyTableViewController ()
 
@@ -25,7 +26,7 @@
     [super viewDidLoad];
     self.navigationController.navigationBar.translucent = NO;
     self.title = @"RootVC";
-    _dataArray = @[@"base",@"update",@"remake",@"constant",@"martin",@"6"];
+    _dataArray = @[@"base",@"update",@"remake",@"constant",@"martin",@"array"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,7 +43,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 //#warning Incomplete implementation, return the number of rows
-    return 5;
+    return _dataArray.count;
 }
 
 
@@ -70,6 +71,9 @@
         [self.navigationController pushViewController:vc animated:YES];
     }else if (indexPath.row == 4){
         marginViewController *vc = [marginViewController new];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if(indexPath.row == 5){
+        arrayViewController *vc = [arrayViewController new];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

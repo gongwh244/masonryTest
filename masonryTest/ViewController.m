@@ -34,16 +34,22 @@
     [self.view addSubview:blueView];
     
     NSInteger pad = 10;
+    
+    
     UIView *superView = self.view;
     
     [redView mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        
+        
         make.top.equalTo(superView.mas_top).offset(pad);
         make.left.equalTo(superView.mas_left).offset(pad);
         make.bottom.equalTo(blueView.mas_top).offset(-pad);
         make.right.equalTo(greenView.mas_left).offset(-pad);
         
         make.width.equalTo(greenView.mas_width);
-        make.height.equalTo(blueView.mas_height);
+        
+        make.height.equalTo(@[greenView,blueView]);
     }];
     
     [greenView mas_makeConstraints:^(MASConstraintMaker *make) {
