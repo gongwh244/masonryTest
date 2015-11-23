@@ -13,6 +13,8 @@
 #import "constantViewController.h"
 #import "marginViewController.h"
 #import "arrayViewController.h"
+#import "scrollViewController.h"
+#import "hideViewController.h"
 
 @interface MyTableViewController ()
 
@@ -26,7 +28,7 @@
     [super viewDidLoad];
     self.navigationController.navigationBar.translucent = NO;
     self.title = @"RootVC";
-    _dataArray = @[@"base",@"update",@"remake",@"constant",@"martin",@"array"];
+    _dataArray = @[@"base",@"update",@"remake",@"constant",@"martin",@"array",@"scroll",@"hide"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -74,6 +76,14 @@
         [self.navigationController pushViewController:vc animated:YES];
     }else if(indexPath.row == 5){
         arrayViewController *vc = [arrayViewController new];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row == 6){
+        scrollViewController *vc = [scrollViewController new];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row == 7){
+        hideViewController *vc = [hideViewController new];
+        vc.title = _dataArray[indexPath.row];
+        vc.view.backgroundColor = [UIColor whiteColor];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

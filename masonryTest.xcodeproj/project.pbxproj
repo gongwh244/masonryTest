@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB1431B41C02B6B1000AB3A4 /* scrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1431B31C02B6B1000AB3A4 /* scrollViewController.m */; };
+		FB1431BA1C02BDAE000AB3A4 /* UIColor+randomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1431B91C02BDAE000AB3A4 /* UIColor+randomColor.m */; };
+		FB1431BC1C02DA31000AB3A4 /* 123.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB1431BB1C02DA31000AB3A4 /* 123.jpg */; };
+		FB1431C21C02E718000AB3A4 /* hideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1431C11C02E718000AB3A4 /* hideViewController.m */; };
 		FB2FA0081BE999CB008B22F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2FA0071BE999CB008B22F6 /* main.m */; };
 		FB2FA00B1BE999CB008B22F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2FA00A1BE999CB008B22F6 /* AppDelegate.m */; };
 		FB2FA00E1BE999CB008B22F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2FA00D1BE999CB008B22F6 /* ViewController.m */; };
@@ -52,6 +56,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB1431B21C02B6B1000AB3A4 /* scrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scrollViewController.h; sourceTree = "<group>"; };
+		FB1431B31C02B6B1000AB3A4 /* scrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = scrollViewController.m; sourceTree = "<group>"; };
+		FB1431B81C02BDAE000AB3A4 /* UIColor+randomColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+randomColor.h"; sourceTree = "<group>"; };
+		FB1431B91C02BDAE000AB3A4 /* UIColor+randomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+randomColor.m"; sourceTree = "<group>"; };
+		FB1431BB1C02DA31000AB3A4 /* 123.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 123.jpg; sourceTree = "<group>"; };
+		FB1431C01C02E718000AB3A4 /* hideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hideViewController.h; sourceTree = "<group>"; };
+		FB1431C11C02E718000AB3A4 /* hideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hideViewController.m; sourceTree = "<group>"; };
 		FB2FA0031BE999CB008B22F6 /* myApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB2FA0071BE999CB008B22F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FB2FA0091BE999CB008B22F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -170,8 +181,15 @@
 				FB4821671BFC261E00139B82 /* marginViewController.m */,
 				FBE429991BFF16FB007EE1E5 /* arrayViewController.h */,
 				FBE4299A1BFF16FB007EE1E5 /* arrayViewController.m */,
+				FB1431C01C02E718000AB3A4 /* hideViewController.h */,
+				FB1431C11C02E718000AB3A4 /* hideViewController.m */,
+				FB1431B21C02B6B1000AB3A4 /* scrollViewController.h */,
+				FB1431B31C02B6B1000AB3A4 /* scrollViewController.m */,
 				FB2FA0391BE99AE6008B22F6 /* MyTableViewController.h */,
 				FB2FA03A1BE99AE6008B22F6 /* MyTableViewController.m */,
+				FB1431B81C02BDAE000AB3A4 /* UIColor+randomColor.h */,
+				FB1431B91C02BDAE000AB3A4 /* UIColor+randomColor.m */,
+				FB1431BB1C02DA31000AB3A4 /* 123.jpg */,
 				FB2FA00F1BE999CB008B22F6 /* Main.storyboard */,
 				FB2FA0121BE999CB008B22F6 /* Assets.xcassets */,
 				FB2FA03E1BE99ECC008B22F6 /* Masonry */,
@@ -350,6 +368,7 @@
 				FB2FA0591BE99ECC008B22F6 /* Info.plist in Resources */,
 				FB2FA0161BE999CB008B22F6 /* LaunchScreen.storyboard in Resources */,
 				FB2FA0131BE999CB008B22F6 /* Assets.xcassets in Resources */,
+				FB1431BC1C02DA31000AB3A4 /* 123.jpg in Resources */,
 				FB2FA0111BE999CB008B22F6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,9 +402,11 @@
 				FB2FA0631BE99ECC008B22F6 /* ViewController+MASAdditions.m in Sources */,
 				FB4821681BFC261E00139B82 /* marginViewController.m in Sources */,
 				FB5178E71BFB2C1900ABAF40 /* remakeViewController.m in Sources */,
+				FB1431BA1C02BDAE000AB3A4 /* UIColor+randomColor.m in Sources */,
 				FBE4299B1BFF16FB007EE1E5 /* arrayViewController.m in Sources */,
 				FB2FA05D1BE99ECC008B22F6 /* MASLayoutConstraint.m in Sources */,
 				FB2FA0601BE99ECC008B22F6 /* NSArray+MASAdditions.m in Sources */,
+				FB1431C21C02E718000AB3A4 /* hideViewController.m in Sources */,
 				FB2FA05F1BE99ECC008B22F6 /* MASViewConstraint.m in Sources */,
 				FB2FA05E1BE99ECC008B22F6 /* MASViewAttribute.m in Sources */,
 				FB5178E41BFB217200ABAF40 /* updataViewController.m in Sources */,
@@ -394,6 +415,7 @@
 				FB2FA03B1BE99AE6008B22F6 /* MyTableViewController.m in Sources */,
 				FB2FA05A1BE99ECC008B22F6 /* MASCompositeConstraint.m in Sources */,
 				FB2FA0611BE99ECC008B22F6 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				FB1431B41C02B6B1000AB3A4 /* scrollViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -64,7 +64,12 @@
         make.height.equalTo([NSNumber numberWithFloat:_height]);
     }];
     
-    [UIView animateWithDuration:0.5 delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:0.5 options:UIViewAnimationOptionAllowUserInteraction animations:^{
+    [UIView animateWithDuration:0.5
+                          delay:0
+         usingSpringWithDamping:0.5
+          initialSpringVelocity:0.5
+                        options:UIViewAnimationOptionAllowUserInteraction
+                     animations:^{
         [self.view layoutIfNeeded];
     } completion:nil];
 }
