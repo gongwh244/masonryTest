@@ -32,7 +32,6 @@
     
     NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.4 target:self selector:@selector(refreshUI) userInfo:nil repeats:YES];
     [timer fire];
-    
 }
 
 

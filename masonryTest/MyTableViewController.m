@@ -57,8 +57,8 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
     if (indexPath.row == 0) {
-        
         UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         ViewController *vc = (ViewController *)[storyBoard instantiateViewControllerWithIdentifier:@"ViewController"];
         [self.navigationController pushViewController:vc animated:YES];
