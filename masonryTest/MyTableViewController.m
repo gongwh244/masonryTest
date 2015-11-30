@@ -15,6 +15,7 @@
 #import "arrayViewController.h"
 #import "scrollViewController.h"
 #import "hideViewController.h"
+#import "emitterViewController.h"
 
 @interface MyTableViewController ()
 
@@ -28,7 +29,7 @@
     [super viewDidLoad];
     self.navigationController.navigationBar.translucent = NO;
     self.title = @"RootVC";
-    _dataArray = @[@"base",@"update",@"remake",@"constant",@"martin",@"array",@"scroll",@"hide"];
+    _dataArray = @[@"base",@"update",@"remake",@"constant",@"martin",@"array",@"scroll",@"hide",@"emitter"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -84,6 +85,11 @@
         hideViewController *vc = [hideViewController new];
         vc.title = _dataArray[indexPath.row];
         vc.view.backgroundColor = [UIColor whiteColor];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row == 8){
+        emitterViewController *vc = [[emitterViewController alloc] init];
+        vc.title = _dataArray[indexPath.row];
+        vc.view.backgroundColor = [UIColor redColor];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }
