@@ -35,6 +35,11 @@
 		FB4821681BFC261E00139B82 /* marginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4821671BFC261E00139B82 /* marginViewController.m */; };
 		FB5178E41BFB217200ABAF40 /* updataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5178E31BFB217200ABAF40 /* updataViewController.m */; };
 		FB5178E71BFB2C1900ABAF40 /* remakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5178E61BFB2C1900ABAF40 /* remakeViewController.m */; };
+		FB5F9E5C1C0BF80E001C0215 /* emitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5F9E5B1C0BF80E001C0215 /* emitterViewController.m */; };
+		FB5F9E5E1C0BFA5C001C0215 /* 111.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5F9E5D1C0BFA5C001C0215 /* 111.png */; };
+		FB5F9E601C0BFA6D001C0215 /* 222.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5F9E5F1C0BFA6D001C0215 /* 222.png */; };
+		FB5F9E621C0BFF73001C0215 /* point.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5F9E611C0BFF73001C0215 /* point.png */; };
+		FB5F9E641C0C003D001C0215 /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5F9E631C0C003D001C0215 /* white.png */; };
 		FBE4299B1BFF16FB007EE1E5 /* arrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE4299A1BFF16FB007EE1E5 /* arrayViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -115,6 +120,12 @@
 		FB5178E31BFB217200ABAF40 /* updataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = updataViewController.m; sourceTree = "<group>"; };
 		FB5178E51BFB2C1900ABAF40 /* remakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = remakeViewController.h; sourceTree = "<group>"; };
 		FB5178E61BFB2C1900ABAF40 /* remakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = remakeViewController.m; sourceTree = "<group>"; };
+		FB5F9E5A1C0BF80E001C0215 /* emitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = emitterViewController.h; sourceTree = "<group>"; };
+		FB5F9E5B1C0BF80E001C0215 /* emitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = emitterViewController.m; sourceTree = "<group>"; };
+		FB5F9E5D1C0BFA5C001C0215 /* 111.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 111.png; sourceTree = "<group>"; };
+		FB5F9E5F1C0BFA6D001C0215 /* 222.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 222.png; sourceTree = "<group>"; };
+		FB5F9E611C0BFF73001C0215 /* point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = point.png; sourceTree = "<group>"; };
+		FB5F9E631C0C003D001C0215 /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white.png; sourceTree = "<group>"; };
 		FBE429991BFF16FB007EE1E5 /* arrayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arrayViewController.h; sourceTree = "<group>"; };
 		FBE4299A1BFF16FB007EE1E5 /* arrayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = arrayViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -187,9 +198,15 @@
 				FB1431B31C02B6B1000AB3A4 /* scrollViewController.m */,
 				FB2FA0391BE99AE6008B22F6 /* MyTableViewController.h */,
 				FB2FA03A1BE99AE6008B22F6 /* MyTableViewController.m */,
+				FB5F9E5A1C0BF80E001C0215 /* emitterViewController.h */,
+				FB5F9E5B1C0BF80E001C0215 /* emitterViewController.m */,
 				FB1431B81C02BDAE000AB3A4 /* UIColor+randomColor.h */,
 				FB1431B91C02BDAE000AB3A4 /* UIColor+randomColor.m */,
+				FB5F9E5D1C0BFA5C001C0215 /* 111.png */,
+				FB5F9E5F1C0BFA6D001C0215 /* 222.png */,
 				FB1431BB1C02DA31000AB3A4 /* 123.jpg */,
+				FB5F9E611C0BFF73001C0215 /* point.png */,
+				FB5F9E631C0C003D001C0215 /* white.png */,
 				FB2FA00F1BE999CB008B22F6 /* Main.storyboard */,
 				FB2FA0121BE999CB008B22F6 /* Assets.xcassets */,
 				FB2FA03E1BE99ECC008B22F6 /* Masonry */,
@@ -366,10 +383,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB2FA0591BE99ECC008B22F6 /* Info.plist in Resources */,
+				FB5F9E5E1C0BFA5C001C0215 /* 111.png in Resources */,
+				FB5F9E641C0C003D001C0215 /* white.png in Resources */,
 				FB2FA0161BE999CB008B22F6 /* LaunchScreen.storyboard in Resources */,
 				FB2FA0131BE999CB008B22F6 /* Assets.xcassets in Resources */,
 				FB1431BC1C02DA31000AB3A4 /* 123.jpg in Resources */,
 				FB2FA0111BE999CB008B22F6 /* Main.storyboard in Resources */,
+				FB5F9E621C0BFF73001C0215 /* point.png in Resources */,
+				FB5F9E601C0BFA6D001C0215 /* 222.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +433,7 @@
 				FB5178E41BFB217200ABAF40 /* updataViewController.m in Sources */,
 				FB2FA0621BE99ECC008B22F6 /* View+MASAdditions.m in Sources */,
 				FB2FA0081BE999CB008B22F6 /* main.m in Sources */,
+				FB5F9E5C1C0BF80E001C0215 /* emitterViewController.m in Sources */,
 				FB2FA03B1BE99AE6008B22F6 /* MyTableViewController.m in Sources */,
 				FB2FA05A1BE99ECC008B22F6 /* MASCompositeConstraint.m in Sources */,
 				FB2FA0611BE99ECC008B22F6 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
