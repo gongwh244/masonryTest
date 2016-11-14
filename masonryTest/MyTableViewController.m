@@ -5,6 +5,7 @@
 //  Created by ches on 15/11/4.
 //  Copyright © 2015年 ches. All rights reserved.
 //
+#import <AVFoundation/AVFoundation.h>
 
 #import "MyTableViewController.h"
 #import "ViewController.h"
@@ -16,6 +17,7 @@
 #import "scrollViewController.h"
 #import "hideViewController.h"
 #import "emitterViewController.h"
+#import "mainViewController.h"
 
 @interface MyTableViewController ()
 
@@ -29,7 +31,7 @@
     [super viewDidLoad];
     self.navigationController.navigationBar.translucent = NO;
     self.title = @"RootVC";
-    _dataArray = @[@"base",@"update",@"remake",@"constant",@"martin",@"array",@"scroll",@"hide",@"emitter"];
+    _dataArray = @[@"base",@"update",@"remake",@"constant",@"martin",@"array",@"scroll",@"hide",@"emitter",@"video"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -91,6 +93,16 @@
         vc.title = _dataArray[indexPath.row];
         vc.view.backgroundColor = [UIColor redColor];
         [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row == 9){
+//        emitterViewController *vc = [[emitterViewController alloc] init];
+//        vc.title = _dataArray[indexPath.row];
+//        vc.view.backgroundColor = [UIColor redColor];
+//        [self.navigationController pushViewController:vc animated:YES];
+        mainViewController *vc = [[mainViewController alloc] init];
+        vc.title = _dataArray[indexPath.row];
+        [self.navigationController pushViewController:vc animated:YES];
+        
+        
     }
 }
 

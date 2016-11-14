@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F062D2C71DD9C08500DE9725 /* mainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F062D2C51DD9C08500DE9725 /* mainViewController.m */; };
+		F062D2C81DD9C08500DE9725 /* mainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F062D2C61DD9C08500DE9725 /* mainViewController.xib */; };
 		FB1431B41C02B6B1000AB3A4 /* scrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1431B31C02B6B1000AB3A4 /* scrollViewController.m */; };
 		FB1431BA1C02BDAE000AB3A4 /* UIColor+randomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1431B91C02BDAE000AB3A4 /* UIColor+randomColor.m */; };
 		FB1431BC1C02DA31000AB3A4 /* 123.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB1431BB1C02DA31000AB3A4 /* 123.jpg */; };
@@ -59,6 +61,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F062D2C41DD9C08500DE9725 /* mainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainViewController.h; sourceTree = "<group>"; };
+		F062D2C51DD9C08500DE9725 /* mainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainViewController.m; sourceTree = "<group>"; };
+		F062D2C61DD9C08500DE9725 /* mainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mainViewController.xib; sourceTree = "<group>"; };
 		FB1431B21C02B6B1000AB3A4 /* scrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scrollViewController.h; sourceTree = "<group>"; };
 		FB1431B31C02B6B1000AB3A4 /* scrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = scrollViewController.m; sourceTree = "<group>"; };
 		FB1431B81C02BDAE000AB3A4 /* UIColor+randomColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+randomColor.h"; sourceTree = "<group>"; };
@@ -149,9 +154,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F062D2C31DD9BCD400DE9725 /* videoEdit */ = {
+			isa = PBXGroup;
+			children = (
+				F062D2C41DD9C08500DE9725 /* mainViewController.h */,
+				F062D2C51DD9C08500DE9725 /* mainViewController.m */,
+				F062D2C61DD9C08500DE9725 /* mainViewController.xib */,
+			);
+			path = videoEdit;
+			sourceTree = "<group>";
+		};
 		FB2F9FFA1BE999CB008B22F6 = {
 			isa = PBXGroup;
 			children = (
+				F062D2C31DD9BCD400DE9725 /* videoEdit */,
 				FB2FA0051BE999CB008B22F6 /* masonryTest */,
 				FB2FA0041BE999CB008B22F6 /* Products */,
 			);
@@ -357,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB2FA0591BE99ECC008B22F6 /* Info.plist in Resources */,
+				F062D2C81DD9C08500DE9725 /* mainViewController.xib in Resources */,
 				FB5F9E5E1C0BFA5C001C0215 /* 111.png in Resources */,
 				FB5F9E641C0C003D001C0215 /* white.png in Resources */,
 				FB2FA0161BE999CB008B22F6 /* LaunchScreen.storyboard in Resources */,
@@ -392,6 +409,7 @@
 				FB2FA05C1BE99ECC008B22F6 /* MASConstraintMaker.m in Sources */,
 				FB2FA00E1BE999CB008B22F6 /* ViewController.m in Sources */,
 				FB2FA00B1BE999CB008B22F6 /* AppDelegate.m in Sources */,
+				F062D2C71DD9C08500DE9725 /* mainViewController.m in Sources */,
 				FB2FA05B1BE99ECC008B22F6 /* MASConstraint.m in Sources */,
 				FB4821651BFC19F000139B82 /* constantViewController.m in Sources */,
 				FB2FA0631BE99ECC008B22F6 /* ViewController+MASAdditions.m in Sources */,
