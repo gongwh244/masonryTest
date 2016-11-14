@@ -17,8 +17,6 @@
 		FB2FA0111BE999CB008B22F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB2FA00F1BE999CB008B22F6 /* Main.storyboard */; };
 		FB2FA0131BE999CB008B22F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB2FA0121BE999CB008B22F6 /* Assets.xcassets */; };
 		FB2FA0161BE999CB008B22F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB2FA0141BE999CB008B22F6 /* LaunchScreen.storyboard */; };
-		FB2FA0211BE999CB008B22F6 /* masonryTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2FA0201BE999CB008B22F6 /* masonryTestTests.m */; };
-		FB2FA02C1BE999CB008B22F6 /* masonryTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2FA02B1BE999CB008B22F6 /* masonryTestUITests.m */; };
 		FB2FA03B1BE99AE6008B22F6 /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2FA03A1BE99AE6008B22F6 /* MyTableViewController.m */; };
 		FB2FA0591BE99ECC008B22F6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB2FA03F1BE99ECC008B22F6 /* Info.plist */; };
 		FB2FA05A1BE99ECC008B22F6 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2FA0411BE99ECC008B22F6 /* MASCompositeConstraint.m */; };
@@ -79,11 +77,7 @@
 		FB2FA0151BE999CB008B22F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB2FA0171BE999CB008B22F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB2FA01C1BE999CB008B22F6 /* masonryTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = masonryTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB2FA0201BE999CB008B22F6 /* masonryTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = masonryTestTests.m; sourceTree = "<group>"; };
-		FB2FA0221BE999CB008B22F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB2FA0271BE999CB008B22F6 /* masonryTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = masonryTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB2FA02B1BE999CB008B22F6 /* masonryTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = masonryTestUITests.m; sourceTree = "<group>"; };
-		FB2FA02D1BE999CB008B22F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB2FA0391BE99AE6008B22F6 /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
 		FB2FA03A1BE99AE6008B22F6 /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
 		FB2FA03F1BE99ECC008B22F6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -159,8 +153,6 @@
 			isa = PBXGroup;
 			children = (
 				FB2FA0051BE999CB008B22F6 /* masonryTest */,
-				FB2FA01F1BE999CB008B22F6 /* masonryTestTests */,
-				FB2FA02A1BE999CB008B22F6 /* masonryTestUITests */,
 				FB2FA0041BE999CB008B22F6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -223,24 +215,6 @@
 				FB2FA0071BE999CB008B22F6 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		FB2FA01F1BE999CB008B22F6 /* masonryTestTests */ = {
-			isa = PBXGroup;
-			children = (
-				FB2FA0201BE999CB008B22F6 /* masonryTestTests.m */,
-				FB2FA0221BE999CB008B22F6 /* Info.plist */,
-			);
-			path = masonryTestTests;
-			sourceTree = "<group>";
-		};
-		FB2FA02A1BE999CB008B22F6 /* masonryTestUITests */ = {
-			isa = PBXGroup;
-			children = (
-				FB2FA02B1BE999CB008B22F6 /* masonryTestUITests.m */,
-				FB2FA02D1BE999CB008B22F6 /* Info.plist */,
-			);
-			path = masonryTestUITests;
 			sourceTree = "<group>";
 		};
 		FB2FA03E1BE99ECC008B22F6 /* Masonry */ = {
@@ -445,7 +419,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB2FA0211BE999CB008B22F6 /* masonryTestTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,7 +426,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB2FA02C1BE999CB008B22F6 /* masonryTestUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
