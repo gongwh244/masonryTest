@@ -47,20 +47,19 @@
 }
 
 -(void)startAnimation{
-    [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:0.05];
-    [UIView setAnimationDelegate:self];
-    [UIView setAnimationDidStopSelector:@selector(endAnimation)];
-    _imageView.transform = CGAffineTransformMakeRotation(_angle * (M_PI / 180.0f));
-    [UIView commitAnimations];
+    
+    __weak typeof(self)weakSelf = self;
+    [UIView animateWithDuration:0.05 animations:^{
+        _imageView.transform = CGAffineTransformMakeRotation(_angle * (M_PI / 180.0f));
+    } completion:^(BOOL finished) {
+        [weakSelf endAnimation];
+    }];
 }
 
 -(void)endAnimation{
     _angle += 10;
     [self startAnimation];
 }
-
-
 
 - (void)layOUtSnowEmitter{
     
@@ -73,7 +72,6 @@
     snowEmitter.emitterMode = kCAEmitterLayerVolume;
     //发射源的形状
     snowEmitter.emitterShape = kCAEmitterLayerLine;
-    
     //创建雪花类型的粒子
     CAEmitterCell *snowflake = [CAEmitterCell emitterCell];
     //粒子的名字
@@ -94,13 +92,9 @@
     //子旋转角度范围
     snowflake.spinRange = 0.5 * M_PI;
     snowflake.contents = (id)[[UIImage imageNamed:@"white"] CGImage];
-    
-    
     //snowEmitter.shadowColor = [[UIColor grayColor] CGColor];
     snowEmitter.emitterCells = [NSArray arrayWithObjects:snowflake,nil];
     [self.view.layer insertSublayer:snowEmitter atIndex:0];
 }
-
-
 
 @end
