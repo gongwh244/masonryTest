@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		F062D2C71DD9C08500DE9725 /* mainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F062D2C51DD9C08500DE9725 /* mainViewController.m */; };
 		F062D2C81DD9C08500DE9725 /* mainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F062D2C61DD9C08500DE9725 /* mainViewController.xib */; };
+		F0755F761DE6E219005EFCFD /* customCamraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0755F741DE6E219005EFCFD /* customCamraViewController.m */; };
+		F0755F771DE6E219005EFCFD /* customCamraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0755F751DE6E219005EFCFD /* customCamraViewController.xib */; };
 		FB1431B41C02B6B1000AB3A4 /* scrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1431B31C02B6B1000AB3A4 /* scrollViewController.m */; };
 		FB1431BA1C02BDAE000AB3A4 /* UIColor+randomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1431B91C02BDAE000AB3A4 /* UIColor+randomColor.m */; };
 		FB1431BC1C02DA31000AB3A4 /* 123.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB1431BB1C02DA31000AB3A4 /* 123.jpg */; };
@@ -43,27 +45,15 @@
 		FBE4299B1BFF16FB007EE1E5 /* arrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE4299A1BFF16FB007EE1E5 /* arrayViewController.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		FB2FA01D1BE999CB008B22F6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FB2F9FFB1BE999CB008B22F6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FB2FA0021BE999CB008B22F6;
-			remoteInfo = masonryTest;
-		};
-		FB2FA0281BE999CB008B22F6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FB2F9FFB1BE999CB008B22F6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FB2FA0021BE999CB008B22F6;
-			remoteInfo = masonryTest;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		F062D2C41DD9C08500DE9725 /* mainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainViewController.h; sourceTree = "<group>"; };
 		F062D2C51DD9C08500DE9725 /* mainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainViewController.m; sourceTree = "<group>"; };
 		F062D2C61DD9C08500DE9725 /* mainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mainViewController.xib; sourceTree = "<group>"; };
+		F0755F731DE6E219005EFCFD /* customCamraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customCamraViewController.h; sourceTree = "<group>"; };
+		F0755F741DE6E219005EFCFD /* customCamraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customCamraViewController.m; sourceTree = "<group>"; };
+		F0755F751DE6E219005EFCFD /* customCamraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = customCamraViewController.xib; sourceTree = "<group>"; };
+		F0755F781DE6ED8F005EFCFD /* videoEdit.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = videoEdit.pch; sourceTree = "<group>"; };
+		F0755F791DE6EE25005EFCFD /* GlobalDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalDefine.h; sourceTree = "<group>"; };
 		FB1431B21C02B6B1000AB3A4 /* scrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scrollViewController.h; sourceTree = "<group>"; };
 		FB1431B31C02B6B1000AB3A4 /* scrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = scrollViewController.m; sourceTree = "<group>"; };
 		FB1431B81C02BDAE000AB3A4 /* UIColor+randomColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+randomColor.h"; sourceTree = "<group>"; };
@@ -81,8 +71,6 @@
 		FB2FA0121BE999CB008B22F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB2FA0151BE999CB008B22F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB2FA0171BE999CB008B22F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FB2FA01C1BE999CB008B22F6 /* masonryTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = masonryTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB2FA0271BE999CB008B22F6 /* masonryTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = masonryTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB2FA0391BE99AE6008B22F6 /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
 		FB2FA03A1BE99AE6008B22F6 /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
 		FB2FA03F1BE99ECC008B22F6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -137,20 +125,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FB2FA0191BE999CB008B22F6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FB2FA0241BE999CB008B22F6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -160,6 +134,9 @@
 				F062D2C41DD9C08500DE9725 /* mainViewController.h */,
 				F062D2C51DD9C08500DE9725 /* mainViewController.m */,
 				F062D2C61DD9C08500DE9725 /* mainViewController.xib */,
+				F0755F731DE6E219005EFCFD /* customCamraViewController.h */,
+				F0755F741DE6E219005EFCFD /* customCamraViewController.m */,
+				F0755F751DE6E219005EFCFD /* customCamraViewController.xib */,
 			);
 			path = videoEdit;
 			sourceTree = "<group>";
@@ -177,8 +154,6 @@
 			isa = PBXGroup;
 			children = (
 				FB2FA0031BE999CB008B22F6 /* myApp.app */,
-				FB2FA01C1BE999CB008B22F6 /* masonryTestTests.xctest */,
-				FB2FA0271BE999CB008B22F6 /* masonryTestUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -229,6 +204,8 @@
 			isa = PBXGroup;
 			children = (
 				FB2FA0071BE999CB008B22F6 /* main.m */,
+				F0755F781DE6ED8F005EFCFD /* videoEdit.pch */,
+				F0755F791DE6EE25005EFCFD /* GlobalDefine.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -286,42 +263,6 @@
 			productReference = FB2FA0031BE999CB008B22F6 /* myApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FB2FA01B1BE999CB008B22F6 /* masonryTestTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FB2FA0331BE999CB008B22F6 /* Build configuration list for PBXNativeTarget "masonryTestTests" */;
-			buildPhases = (
-				FB2FA0181BE999CB008B22F6 /* Sources */,
-				FB2FA0191BE999CB008B22F6 /* Frameworks */,
-				FB2FA01A1BE999CB008B22F6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FB2FA01E1BE999CB008B22F6 /* PBXTargetDependency */,
-			);
-			name = masonryTestTests;
-			productName = masonryTestTests;
-			productReference = FB2FA01C1BE999CB008B22F6 /* masonryTestTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		FB2FA0261BE999CB008B22F6 /* masonryTestUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FB2FA0361BE999CB008B22F6 /* Build configuration list for PBXNativeTarget "masonryTestUITests" */;
-			buildPhases = (
-				FB2FA0231BE999CB008B22F6 /* Sources */,
-				FB2FA0241BE999CB008B22F6 /* Frameworks */,
-				FB2FA0251BE999CB008B22F6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FB2FA0291BE999CB008B22F6 /* PBXTargetDependency */,
-			);
-			name = masonryTestUITests;
-			productName = masonryTestUITests;
-			productReference = FB2FA0271BE999CB008B22F6 /* masonryTestUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -334,16 +275,6 @@
 					FB2FA0021BE999CB008B22F6 = {
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = L48G2N8A4X;
-					};
-					FB2FA01B1BE999CB008B22F6 = {
-						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = AMJVMJTQ84;
-						TestTargetID = FB2FA0021BE999CB008B22F6;
-					};
-					FB2FA0261BE999CB008B22F6 = {
-						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = AMJVMJTQ84;
-						TestTargetID = FB2FA0021BE999CB008B22F6;
 					};
 				};
 			};
@@ -361,8 +292,6 @@
 			projectRoot = "";
 			targets = (
 				FB2FA0021BE999CB008B22F6 /* masonryTest */,
-				FB2FA01B1BE999CB008B22F6 /* masonryTestTests */,
-				FB2FA0261BE999CB008B22F6 /* masonryTestUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -375,6 +304,7 @@
 				FB2FA0591BE99ECC008B22F6 /* Info.plist in Resources */,
 				F062D2C81DD9C08500DE9725 /* mainViewController.xib in Resources */,
 				FB5F9E5E1C0BFA5C001C0215 /* 111.png in Resources */,
+				F0755F771DE6E219005EFCFD /* customCamraViewController.xib in Resources */,
 				FB5F9E641C0C003D001C0215 /* white.png in Resources */,
 				FB2FA0161BE999CB008B22F6 /* LaunchScreen.storyboard in Resources */,
 				FB2FA0131BE999CB008B22F6 /* Assets.xcassets in Resources */,
@@ -382,20 +312,6 @@
 				FB2FA0111BE999CB008B22F6 /* Main.storyboard in Resources */,
 				FB5F9E621C0BFF73001C0215 /* point.png in Resources */,
 				FB5F9E601C0BFA6D001C0215 /* 222.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FB2FA01A1BE999CB008B22F6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FB2FA0251BE999CB008B22F6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +336,7 @@
 				FB2FA05D1BE99ECC008B22F6 /* MASLayoutConstraint.m in Sources */,
 				FB2FA0601BE99ECC008B22F6 /* NSArray+MASAdditions.m in Sources */,
 				FB1431C21C02E718000AB3A4 /* hideViewController.m in Sources */,
+				F0755F761DE6E219005EFCFD /* customCamraViewController.m in Sources */,
 				FB2FA05F1BE99ECC008B22F6 /* MASViewConstraint.m in Sources */,
 				FB2FA05E1BE99ECC008B22F6 /* MASViewAttribute.m in Sources */,
 				FB5178E41BFB217200ABAF40 /* updataViewController.m in Sources */,
@@ -433,34 +350,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FB2FA0181BE999CB008B22F6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FB2FA0231BE999CB008B22F6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		FB2FA01E1BE999CB008B22F6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FB2FA0021BE999CB008B22F6 /* masonryTest */;
-			targetProxy = FB2FA01D1BE999CB008B22F6 /* PBXContainerItemProxy */;
-		};
-		FB2FA0291BE999CB008B22F6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FB2FA0021BE999CB008B22F6 /* masonryTest */;
-			targetProxy = FB2FA0281BE999CB008B22F6 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FB2FA00F1BE999CB008B22F6 /* Main.storyboard */ = {
@@ -569,6 +459,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L48G2N8A4X;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/masonryTest/videoEdit.pch";
 				INFOPLIST_FILE = masonryTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -582,59 +474,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L48G2N8A4X;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/masonryTest/videoEdit.pch";
 				INFOPLIST_FILE = masonryTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = abc.masonryTest;
 				PRODUCT_NAME = myApp;
-			};
-			name = Release;
-		};
-		FB2FA0341BE999CB008B22F6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = masonryTestTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = abc.masonryTestTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/masonryTest.app/masonryTest";
-			};
-			name = Debug;
-		};
-		FB2FA0351BE999CB008B22F6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = masonryTestTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = abc.masonryTestTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/masonryTest.app/masonryTest";
-			};
-			name = Release;
-		};
-		FB2FA0371BE999CB008B22F6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = masonryTestUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = abc.masonryTestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = masonryTest;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		FB2FA0381BE999CB008B22F6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = masonryTestUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = abc.masonryTestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = masonryTest;
-				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
@@ -655,24 +501,6 @@
 			buildConfigurations = (
 				FB2FA0311BE999CB008B22F6 /* Debug */,
 				FB2FA0321BE999CB008B22F6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FB2FA0331BE999CB008B22F6 /* Build configuration list for PBXNativeTarget "masonryTestTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FB2FA0341BE999CB008B22F6 /* Debug */,
-				FB2FA0351BE999CB008B22F6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FB2FA0361BE999CB008B22F6 /* Build configuration list for PBXNativeTarget "masonryTestUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FB2FA0371BE999CB008B22F6 /* Debug */,
-				FB2FA0381BE999CB008B22F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

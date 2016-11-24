@@ -18,6 +18,7 @@
 #import "hideViewController.h"
 #import "emitterViewController.h"
 #import "mainViewController.h"
+#import "customCamraViewController.h"
 
 @interface MyTableViewController ()
 
@@ -31,7 +32,7 @@
     [super viewDidLoad];
     self.navigationController.navigationBar.translucent = NO;
     self.title = @"RootVC";
-    _dataArray = @[@"base",@"update",@"remake",@"constant",@"martin",@"array",@"scroll",@"hide",@"emitter",@"video"];
+    _dataArray = @[@"base",@"update",@"remake",@"constant",@"martin",@"array",@"scroll",@"hide",@"emitter",@"video",@"custom Camra"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -94,15 +95,15 @@
         vc.view.backgroundColor = [UIColor redColor];
         [self.navigationController pushViewController:vc animated:YES];
     }else if (indexPath.row == 9){
-//        emitterViewController *vc = [[emitterViewController alloc] init];
-//        vc.title = _dataArray[indexPath.row];
-//        vc.view.backgroundColor = [UIColor redColor];
-//        [self.navigationController pushViewController:vc animated:YES];
         mainViewController *vc = [[mainViewController alloc] init];
         vc.title = _dataArray[indexPath.row];
         [self.navigationController pushViewController:vc animated:YES];
         
         
+    }else if(indexPath.row == 10){
+        customCamraViewController *vc = [[customCamraViewController alloc] init];
+        vc.title = _dataArray[indexPath.row];
+        [self.navigationController pushViewController:vc animated:YES];
     }
 }
 

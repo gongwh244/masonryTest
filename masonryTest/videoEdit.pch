@@ -1,0 +1,14 @@
+//
+//  videoEdit.pch
+//  masonryTest
+//
+//  Created by gong on 16/11/24.
+//  Copyright © 2016年 ches. All rights reserved.
+//
+
+#ifndef videoEdit_pch
+#define videoEdit_pch
+
+#import "GlobalDefine.h"
+
+#endif /* videoEdit_pch */

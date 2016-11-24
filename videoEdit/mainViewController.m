@@ -21,8 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self permissionCheck];
-    [self makePickerViewController];
+    
 }
 
 - (void)makePickerViewController{
@@ -60,6 +59,9 @@
 }
 
 - (IBAction)imageClick:(id)sender {
+    [self permissionCheck];
+    [self makePickerViewController];
+    
     [self presentViewController:self.picker animated:YES completion:nil];
 }
 

@@ -45,5 +45,7 @@
 	</array>
 	<key>NSCameraUsageDescription</key>
 	<string>myApp 需要您的同意才能读取媒体资料库</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>myApp 需要你的同意才能写入相册</string>
 </dict>
 </plist>
