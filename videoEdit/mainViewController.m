@@ -7,6 +7,11 @@
 //
 
 #import "mainViewController.h"
+#import <AssetsLibrary/AssetsLibrary.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+#import <AVFoundation/AVFoundation.h>
+#import <MediaPlayer/MediaPlayer.h>
+#import <Foundation/Foundation.h>
 
 @interface mainViewController ()<UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *imageBtn;
@@ -14,6 +19,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imageShower;
 
 @property (nonatomic,strong) UIImagePickerController *picker;
+
+@property (nonatomic,strong) NSURL *videoUrl;
 @end
 
 @implementation mainViewController
@@ -29,7 +36,9 @@
     self.picker = ({
         UIImagePickerController *pick = [[UIImagePickerController alloc] init];
         pick.view.backgroundColor = [UIColor orangeColor];
-        pick.sourceType = UIImagePickerControllerSourceTypeCamera;
+        pick.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        pick.mediaTypes = @[(NSString *)kUTTypeMovie];
+        
         pick.delegate = self;
         pick.allowsEditing = YES;
         pick;
@@ -67,6 +76,24 @@
 
 - (IBAction)videoClick:(id)sender {
     
+    MPMoviePlayerViewController *vc = [[MPMoviePlayerViewController alloc] initWithContentURL:self.videoUrl];
+    [self presentViewController:vc animated:NO completion:nil];
+    vc.moviePlayer.movieSourceType = MPMovieSourceTypeFile;
+    [vc.moviePlayer play];
+}
+
+- (UIImage *)getThumbFromUrl:(NSURL *)url{
+    
+    AVURLAsset *asset = [[AVURLAsset alloc] initWithURL:url options:nil];
+    AVAssetImageGenerator *gen = [[AVAssetImageGenerator alloc] initWithAsset:asset];
+    gen.appliesPreferredTrackTransform = YES;
+    CMTime time = CMTimeMakeWithSeconds(0.0, 600);
+    NSError *error = nil;
+    CMTime actualTime;
+    CGImageRef image = [gen copyCGImageAtTime:time actualTime:&actualTime error:&error];
+    UIImage *thumb = [[UIImage alloc] initWithCGImage:image];
+    CGImageRelease(image);
+    return thumb;
 }
 
 //NSString *const  UIImagePickerControllerMediaType ;指定用户选择的媒体类型（文章最后进行扩展）
@@ -79,11 +106,18 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info{
     
     [picker dismissViewControllerAnimated:YES completion:nil];
-    self.imageShower.image = [info objectForKey:UIImagePickerControllerOriginalImage];
+    if ([info objectForKey:UIImagePickerControllerMediaURL]) {
+        self.videoUrl = [info objectForKey:UIImagePickerControllerMediaURL];
+    }
+    self.imageShower.image = [self getThumbFromUrl:self.videoUrl];
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
+
+
+
 
 @end

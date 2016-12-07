@@ -45,7 +45,7 @@
                         <constraint firstAttribute="height" constant="30" id="sct-hG-g2Q"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <state key="normal" title="video">
+                    <state key="normal" title="play">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
