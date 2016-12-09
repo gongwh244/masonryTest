@@ -19,15 +19,37 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imageShower;
 
 @property (nonatomic,strong) UIImagePickerController *picker;
-
+@property (nonatomic,strong) MPMoviePlayerController *player;
 @property (nonatomic,strong) NSURL *videoUrl;
 @end
 
 @implementation mainViewController
 
+- (MPMoviePlayerController *)player{
+    if (!_player) {
+        _player = [[MPMoviePlayerController alloc] init];
+        _player.view.frame = CGRectMake(0, CGRectGetMaxY(self.imageShower.frame), Screen_width, 0.75 * Screen_width);
+        _player.controlStyle = MPMovieControlStyleNone;
+//        _player.repeatMode = MPMovieRepeatModeOne;
+        //_player.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+        [self.view addSubview:_player.view];
+    }
+    return _player;
+}
+
+- (void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:MPMoviePlayerPlaybackDidFinishNotification];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playEndNotification:) name:MPMoviePlayerPlaybackDidFinishNotification object:nil];
+    
+    [self initUI];
+}
+
+- (void)initUI{
     
 }
 
@@ -38,7 +60,6 @@
         pick.view.backgroundColor = [UIColor orangeColor];
         pick.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
         pick.mediaTypes = @[(NSString *)kUTTypeMovie];
-        
         pick.delegate = self;
         pick.allowsEditing = YES;
         pick;
@@ -67,6 +88,12 @@
     }
 }
 
+- (void)playEndNotification:(NSNotification *)noti{
+    NSLog(@"nooooo");
+    [self.player.view removeFromSuperview];
+    self.player = nil;
+}
+
 - (IBAction)imageClick:(id)sender {
     [self permissionCheck];
     [self makePickerViewController];
@@ -76,10 +103,19 @@
 
 - (IBAction)videoClick:(id)sender {
     
-    MPMoviePlayerViewController *vc = [[MPMoviePlayerViewController alloc] initWithContentURL:self.videoUrl];
-    [self presentViewController:vc animated:NO completion:nil];
-    vc.moviePlayer.movieSourceType = MPMovieSourceTypeFile;
-    [vc.moviePlayer play];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"WeChatSight" ofType:@"mp4"];
+//    self.videoUrl = [[NSURL alloc] initWithString:path];
+    //self.videoUrl = [NSURL URLWithString:path];
+    self.videoUrl = [NSURL fileURLWithPath:path];
+    
+//    MPMoviePlayerViewController *vc = [[MPMoviePlayerViewController alloc] initWithContentURL:self.videoUrl];
+//    [self presentViewController:vc animated:NO completion:nil];
+//    vc.moviePlayer.movieSourceType = MPMovieSourceTypeFile;
+//    [vc.moviePlayer play];
+//    NSAssert(self.videoUrl, @"URL不能为空");
+    self.player.contentURL = self.videoUrl;
+    [self.player play];
+//    [self.player setFullscreen:YES animated:YES];
 }
 
 - (UIImage *)getThumbFromUrl:(NSURL *)url{

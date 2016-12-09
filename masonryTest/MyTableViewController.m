@@ -19,6 +19,7 @@
 #import "emitterViewController.h"
 #import "mainViewController.h"
 #import "customCamraViewController.h"
+#import "customAVPlayerViewController.h"
 
 @interface MyTableViewController ()
 
@@ -32,7 +33,7 @@
     [super viewDidLoad];
     self.navigationController.navigationBar.translucent = NO;
     self.title = @"RootVC";
-    _dataArray = @[@"base",@"update",@"remake",@"constant",@"martin",@"array",@"scroll",@"hide",@"emitter",@"video",@"custom Camra"];
+    _dataArray = @[@"base",@"update",@"remake",@"constant",@"martin",@"array",@"scroll",@"hide",@"emitter",@"video",@"custom Camra",@"custom AVPlayer"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -102,6 +103,10 @@
         
     }else if(indexPath.row == 10){
         customCamraViewController *vc = [[customCamraViewController alloc] init];
+        vc.title = _dataArray[indexPath.row];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row == 11){
+        customAVPlayerViewController *vc = [[customAVPlayerViewController alloc] init];
         vc.title = _dataArray[indexPath.row];
         [self.navigationController pushViewController:vc animated:YES];
     }
