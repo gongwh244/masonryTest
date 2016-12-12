@@ -16,8 +16,7 @@
 @property (nonatomic,strong) UIView *backView;
 @property (nonatomic,strong) AVPlayerLayer *playerLayer;
 @property (nonatomic,strong) UIButton *playBtn;
-@property (nonatomic,strong) UIProgressView *progressView;
-
+@property (nonatomic,strong) UISlider *progressView;
 
 @end
 
@@ -36,7 +35,7 @@
     if (!_playerLayer) {
         _playerLayer = [AVPlayerLayer playerLayerWithPlayer:self.player];
         _playerLayer.frame = CGRectMake(0, 0, Screen_width, 0.75*Screen_width);
-        _playerLayer.backgroundColor = [UIColor yellowColor].CGColor;
+        _playerLayer.backgroundColor = [UIColor blackColor].CGColor;
     }
     return _playerLayer;
 }
@@ -53,27 +52,56 @@
     return _playBtn;
 }
 
-- (UIProgressView *)progressView{
+- (UISlider *)progressView{
     if (!_progressView) {
-        _progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(0.25 * Screen_width, (0.75 + 0.12) * Screen_width, 0.75 * Screen_width, 0.25 * Screen_width)];
+        _progressView = [[UISlider alloc] initWithFrame:CGRectMake(0.25 * Screen_width, 0.75 * Screen_width, 0.75 * Screen_width, 0.25 * Screen_width)];
         _progressView.backgroundColor = [UIColor blueColor];
+        [_progressView addTarget:self action:@selector(sliderAction) forControlEvents:UIControlEventTouchDragInside | UIControlEventTouchUpInside];
     }
     return _progressView;
 }
 
 - (AVPlayer *)player{
     if (!_player) {
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"WeChatSight" ofType:@"mp4"];
-        NSURL *url = [NSURL fileURLWithPath:path];
-        AVPlayerItem *playerItem = [AVPlayerItem playerItemWithURL:url];
+        AVPlayerItem *playerItem = [AVPlayerItem playerItemWithURL:[NSURL fileURLWithPath:
+                                                                    [[NSBundle mainBundle] pathForResource:@"WeChatSight" ofType:@"mp4"]]];
         _player = [AVPlayer playerWithPlayerItem:playerItem];
+        [self addProgressObserver];
+        
     }
     return _player;
 }
+
+- (void)addProgressObserver{
+    AVPlayerItem *item = self.player.currentItem;
+    UISlider *pro = self.progressView;
+    [self.player addPeriodicTimeObserverForInterval:CMTimeMake(1.0, 1.0) queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
+        float current = CMTimeGetSeconds(time);
+        float total = CMTimeGetSeconds(item.duration);
+        NSLog(@"当前已经播放%.2fs.",current);
+        if (current) {
+            [pro setValue:(current/total) animated:YES];
+        }
+    }];
+}
+
+- (void)sliderAction{
+    [self.player pause];
+    [self.player seekToTime:CMTimeMake(self.progressView.value * CMTimeGetSeconds(self.player.currentItem.duration), 1.0) completionHandler:^(BOOL finished) {
+        
+    }];
+}
+
 #pragma mark -
 #pragma mark - Play Action
 - (void)playOrPause{
-    [self.player play];
+    
+    self.playBtn.selected = !self.playBtn.selected;
+    if (self.playBtn.selected) {
+        [self.player play];
+    }else{
+        [self.player pause];
+    }
 }
 
 #pragma mark -
