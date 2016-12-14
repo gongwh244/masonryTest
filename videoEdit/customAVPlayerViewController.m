@@ -8,6 +8,9 @@
 
 #import "customAVPlayerViewController.h"
 #import <AVFoundation/AVFoundation.h>
+#include <libavcodec/avcodec.h>
+#include <libavformat/avformat.h>
+#include <libavfilter/avfilter.h>
 
 @interface customAVPlayerViewController ()
 
@@ -109,6 +112,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self makeUI];
+    
+    av_register_all();
+    char info[10000] = { 0 };
+    printf("%s\n", avcodec_configuration());
+    sprintf(info, "%s\n", avcodec_configuration());
+    NSString * info_ns = [NSString stringWithFormat:@"%s", info];
+    NSLog(@"info = %@",info_ns);
 }
 
 - (void)makeUI{
