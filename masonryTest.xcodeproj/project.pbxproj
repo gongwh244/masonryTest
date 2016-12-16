@@ -7,13 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F0247C661DFB33310065BF80 /* customAVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0247C641DFB33310065BF80 /* customAVPlayerViewController.m */; };
-		F0247C671DFB33310065BF80 /* customAVPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0247C651DFB33310065BF80 /* customAVPlayerViewController.xib */; };
-		F0247C6A1DFB3FA00065BF80 /* WeChatSight.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F0247C691DFB3FA00065BF80 /* WeChatSight.mp4 */; };
 		F05F836C1DFFC4F8001A33E8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F05F836B1DFFC4F8001A33E8 /* AVFoundation.framework */; };
 		F05F836E1DFFC506001A33E8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F05F836D1DFFC506001A33E8 /* CoreMedia.framework */; };
-		F062D2C71DD9C08500DE9725 /* mainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F062D2C51DD9C08500DE9725 /* mainViewController.m */; };
-		F062D2C81DD9C08500DE9725 /* mainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F062D2C61DD9C08500DE9725 /* mainViewController.xib */; };
 		F0692A0A1E01235500A8CF5A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F0692A091E01235500A8CF5A /* libz.tbd */; };
 		F0692A0C1E01236700A8CF5A /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F0692A0B1E01236700A8CF5A /* libbz2.tbd */; };
 		F0692A0E1E01237700A8CF5A /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F0692A0D1E01237700A8CF5A /* libiconv.tbd */; };
@@ -28,21 +23,39 @@
 		F0692B851E01551200A8CF5A /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0692B7B1E01551200A8CF5A /* libswscale.a */; };
 		F0692B861E01551200A8CF5A /* libx264.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0692B7C1E01551200A8CF5A /* libx264.a */; };
 		F0692B881E01566C00A8CF5A /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F0692B871E01566C00A8CF5A /* libstdc++.tbd */; };
-		F0755F761DE6E219005EFCFD /* customCamraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0755F741DE6E219005EFCFD /* customCamraViewController.m */; };
-		F0755F771DE6E219005EFCFD /* customCamraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0755F751DE6E219005EFCFD /* customCamraViewController.xib */; };
+		F06B82C81E0389E700BDEF73 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = F06B82C71E0389E700BDEF73 /* config.plist */; };
+		F06B82D31E03953D00BDEF73 /* customAVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B82CB1E03953D00BDEF73 /* customAVPlayerViewController.m */; };
+		F06B82D41E03953D00BDEF73 /* customAVPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F06B82CC1E03953D00BDEF73 /* customAVPlayerViewController.xib */; };
+		F06B82D51E03953D00BDEF73 /* customCamraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B82CE1E03953D00BDEF73 /* customCamraViewController.m */; };
+		F06B82D61E03953D00BDEF73 /* customCamraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F06B82CF1E03953D00BDEF73 /* customCamraViewController.xib */; };
+		F06B82D71E03953D00BDEF73 /* mainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B82D11E03953D00BDEF73 /* mainViewController.m */; };
+		F06B82D81E03953D00BDEF73 /* mainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F06B82D21E03953D00BDEF73 /* mainViewController.xib */; };
+		F06B82EC1E0396A500BDEF73 /* arrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B82DB1E0396A500BDEF73 /* arrayViewController.m */; };
+		F06B82ED1E0396A500BDEF73 /* constantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B82DD1E0396A500BDEF73 /* constantViewController.m */; };
+		F06B82EE1E0396A500BDEF73 /* emitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B82DF1E0396A500BDEF73 /* emitterViewController.m */; };
+		F06B82EF1E0396A500BDEF73 /* hideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B82E11E0396A500BDEF73 /* hideViewController.m */; };
+		F06B82F01E0396A500BDEF73 /* marginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B82E31E0396A500BDEF73 /* marginViewController.m */; };
+		F06B82F11E0396A500BDEF73 /* remakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B82E51E0396A500BDEF73 /* remakeViewController.m */; };
+		F06B82F21E0396A500BDEF73 /* scrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B82E71E0396A500BDEF73 /* scrollViewController.m */; };
+		F06B82F31E0396A500BDEF73 /* updataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B82E91E0396A500BDEF73 /* updataViewController.m */; };
+		F06B82F41E0396A500BDEF73 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B82EB1E0396A500BDEF73 /* ViewController.m */; };
+		F06B82FC1E03979B00BDEF73 /* 111.png in Resources */ = {isa = PBXBuildFile; fileRef = F06B82F61E03979B00BDEF73 /* 111.png */; };
+		F06B82FD1E03979B00BDEF73 /* 123.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F06B82F71E03979B00BDEF73 /* 123.jpg */; };
+		F06B82FE1E03979B00BDEF73 /* 222.png in Resources */ = {isa = PBXBuildFile; fileRef = F06B82F81E03979B00BDEF73 /* 222.png */; };
+		F06B82FF1E03979B00BDEF73 /* point.png in Resources */ = {isa = PBXBuildFile; fileRef = F06B82F91E03979B00BDEF73 /* point.png */; };
+		F06B83001E03979B00BDEF73 /* WeChatSight.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F06B82FA1E03979B00BDEF73 /* WeChatSight.mp4 */; };
+		F06B83011E03979B00BDEF73 /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = F06B82FB1E03979B00BDEF73 /* white.png */; };
+		F06B83071E0398B400BDEF73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B83041E0398B400BDEF73 /* AppDelegate.m */; };
+		F06B83081E0398B400BDEF73 /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B83061E0398B400BDEF73 /* MyTableViewController.m */; };
+		F06B830C1E03995700BDEF73 /* UIColor+randomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B830B1E03995700BDEF73 /* UIColor+randomColor.m */; };
+		F06B83101E03BC0800BDEF73 /* SonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B830E1E03BC0800BDEF73 /* SonViewController.m */; };
+		F06B83111E03BC0800BDEF73 /* SonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F06B830F1E03BC0800BDEF73 /* SonViewController.xib */; };
 		F0B621411DF7F455006E371B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0B621401DF7F455006E371B /* MobileCoreServices.framework */; };
 		F0B621431DF80620006E371B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0B621421DF80620006E371B /* MediaPlayer.framework */; };
-		FB1431B41C02B6B1000AB3A4 /* scrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1431B31C02B6B1000AB3A4 /* scrollViewController.m */; };
-		FB1431BA1C02BDAE000AB3A4 /* UIColor+randomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1431B91C02BDAE000AB3A4 /* UIColor+randomColor.m */; };
-		FB1431BC1C02DA31000AB3A4 /* 123.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB1431BB1C02DA31000AB3A4 /* 123.jpg */; };
-		FB1431C21C02E718000AB3A4 /* hideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1431C11C02E718000AB3A4 /* hideViewController.m */; };
 		FB2FA0081BE999CB008B22F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2FA0071BE999CB008B22F6 /* main.m */; };
-		FB2FA00B1BE999CB008B22F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2FA00A1BE999CB008B22F6 /* AppDelegate.m */; };
-		FB2FA00E1BE999CB008B22F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2FA00D1BE999CB008B22F6 /* ViewController.m */; };
 		FB2FA0111BE999CB008B22F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB2FA00F1BE999CB008B22F6 /* Main.storyboard */; };
 		FB2FA0131BE999CB008B22F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB2FA0121BE999CB008B22F6 /* Assets.xcassets */; };
 		FB2FA0161BE999CB008B22F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB2FA0141BE999CB008B22F6 /* LaunchScreen.storyboard */; };
-		FB2FA03B1BE99AE6008B22F6 /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2FA03A1BE99AE6008B22F6 /* MyTableViewController.m */; };
 		FB2FA0591BE99ECC008B22F6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB2FA03F1BE99ECC008B22F6 /* Info.plist */; };
 		FB2FA05A1BE99ECC008B22F6 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2FA0411BE99ECC008B22F6 /* MASCompositeConstraint.m */; };
 		FB2FA05B1BE99ECC008B22F6 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2FA0441BE99ECC008B22F6 /* MASConstraint.m */; };
@@ -54,28 +67,11 @@
 		FB2FA0611BE99ECC008B22F6 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2FA0531BE99ECC008B22F6 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		FB2FA0621BE99ECC008B22F6 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2FA0551BE99ECC008B22F6 /* View+MASAdditions.m */; };
 		FB2FA0631BE99ECC008B22F6 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2FA0581BE99ECC008B22F6 /* ViewController+MASAdditions.m */; };
-		FB4821651BFC19F000139B82 /* constantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4821641BFC19F000139B82 /* constantViewController.m */; };
-		FB4821681BFC261E00139B82 /* marginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4821671BFC261E00139B82 /* marginViewController.m */; };
-		FB5178E41BFB217200ABAF40 /* updataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5178E31BFB217200ABAF40 /* updataViewController.m */; };
-		FB5178E71BFB2C1900ABAF40 /* remakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5178E61BFB2C1900ABAF40 /* remakeViewController.m */; };
-		FB5F9E5C1C0BF80E001C0215 /* emitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5F9E5B1C0BF80E001C0215 /* emitterViewController.m */; };
-		FB5F9E5E1C0BFA5C001C0215 /* 111.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5F9E5D1C0BFA5C001C0215 /* 111.png */; };
-		FB5F9E601C0BFA6D001C0215 /* 222.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5F9E5F1C0BFA6D001C0215 /* 222.png */; };
-		FB5F9E621C0BFF73001C0215 /* point.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5F9E611C0BFF73001C0215 /* point.png */; };
-		FB5F9E641C0C003D001C0215 /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5F9E631C0C003D001C0215 /* white.png */; };
-		FBE4299B1BFF16FB007EE1E5 /* arrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE4299A1BFF16FB007EE1E5 /* arrayViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F0247C631DFB33310065BF80 /* customAVPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customAVPlayerViewController.h; sourceTree = "<group>"; };
-		F0247C641DFB33310065BF80 /* customAVPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customAVPlayerViewController.m; sourceTree = "<group>"; };
-		F0247C651DFB33310065BF80 /* customAVPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = customAVPlayerViewController.xib; sourceTree = "<group>"; };
-		F0247C691DFB3FA00065BF80 /* WeChatSight.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = WeChatSight.mp4; sourceTree = "<group>"; };
 		F05F836B1DFFC4F8001A33E8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F05F836D1DFFC506001A33E8 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		F062D2C41DD9C08500DE9725 /* mainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainViewController.h; sourceTree = "<group>"; };
-		F062D2C51DD9C08500DE9725 /* mainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainViewController.m; sourceTree = "<group>"; };
-		F062D2C61DD9C08500DE9725 /* mainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mainViewController.xib; sourceTree = "<group>"; };
 		F0692A091E01235500A8CF5A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		F0692A0B1E01236700A8CF5A /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
 		F0692A0D1E01237700A8CF5A /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
@@ -184,32 +180,59 @@
 		F0692B7B1E01551200A8CF5A /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswscale.a; sourceTree = "<group>"; };
 		F0692B7C1E01551200A8CF5A /* libx264.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libx264.a; sourceTree = "<group>"; };
 		F0692B871E01566C00A8CF5A /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
-		F0755F731DE6E219005EFCFD /* customCamraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customCamraViewController.h; sourceTree = "<group>"; };
-		F0755F741DE6E219005EFCFD /* customCamraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customCamraViewController.m; sourceTree = "<group>"; };
-		F0755F751DE6E219005EFCFD /* customCamraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = customCamraViewController.xib; sourceTree = "<group>"; };
+		F06B82C71E0389E700BDEF73 /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
+		F06B82CA1E03953D00BDEF73 /* customAVPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customAVPlayerViewController.h; sourceTree = "<group>"; };
+		F06B82CB1E03953D00BDEF73 /* customAVPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customAVPlayerViewController.m; sourceTree = "<group>"; };
+		F06B82CC1E03953D00BDEF73 /* customAVPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = customAVPlayerViewController.xib; sourceTree = "<group>"; };
+		F06B82CD1E03953D00BDEF73 /* customCamraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customCamraViewController.h; sourceTree = "<group>"; };
+		F06B82CE1E03953D00BDEF73 /* customCamraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customCamraViewController.m; sourceTree = "<group>"; };
+		F06B82CF1E03953D00BDEF73 /* customCamraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = customCamraViewController.xib; sourceTree = "<group>"; };
+		F06B82D01E03953D00BDEF73 /* mainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainViewController.h; sourceTree = "<group>"; };
+		F06B82D11E03953D00BDEF73 /* mainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainViewController.m; sourceTree = "<group>"; };
+		F06B82D21E03953D00BDEF73 /* mainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mainViewController.xib; sourceTree = "<group>"; };
+		F06B82DA1E0396A500BDEF73 /* arrayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arrayViewController.h; sourceTree = "<group>"; };
+		F06B82DB1E0396A500BDEF73 /* arrayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = arrayViewController.m; sourceTree = "<group>"; };
+		F06B82DC1E0396A500BDEF73 /* constantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constantViewController.h; sourceTree = "<group>"; };
+		F06B82DD1E0396A500BDEF73 /* constantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = constantViewController.m; sourceTree = "<group>"; };
+		F06B82DE1E0396A500BDEF73 /* emitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = emitterViewController.h; sourceTree = "<group>"; };
+		F06B82DF1E0396A500BDEF73 /* emitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = emitterViewController.m; sourceTree = "<group>"; };
+		F06B82E01E0396A500BDEF73 /* hideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hideViewController.h; sourceTree = "<group>"; };
+		F06B82E11E0396A500BDEF73 /* hideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hideViewController.m; sourceTree = "<group>"; };
+		F06B82E21E0396A500BDEF73 /* marginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = marginViewController.h; sourceTree = "<group>"; };
+		F06B82E31E0396A500BDEF73 /* marginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = marginViewController.m; sourceTree = "<group>"; };
+		F06B82E41E0396A500BDEF73 /* remakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = remakeViewController.h; sourceTree = "<group>"; };
+		F06B82E51E0396A500BDEF73 /* remakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = remakeViewController.m; sourceTree = "<group>"; };
+		F06B82E61E0396A500BDEF73 /* scrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scrollViewController.h; sourceTree = "<group>"; };
+		F06B82E71E0396A500BDEF73 /* scrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = scrollViewController.m; sourceTree = "<group>"; };
+		F06B82E81E0396A500BDEF73 /* updataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = updataViewController.h; sourceTree = "<group>"; };
+		F06B82E91E0396A500BDEF73 /* updataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = updataViewController.m; sourceTree = "<group>"; };
+		F06B82EA1E0396A500BDEF73 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F06B82EB1E0396A500BDEF73 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F06B82F61E03979B00BDEF73 /* 111.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 111.png; sourceTree = "<group>"; };
+		F06B82F71E03979B00BDEF73 /* 123.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 123.jpg; sourceTree = "<group>"; };
+		F06B82F81E03979B00BDEF73 /* 222.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 222.png; sourceTree = "<group>"; };
+		F06B82F91E03979B00BDEF73 /* point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = point.png; sourceTree = "<group>"; };
+		F06B82FA1E03979B00BDEF73 /* WeChatSight.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = WeChatSight.mp4; sourceTree = "<group>"; };
+		F06B82FB1E03979B00BDEF73 /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white.png; sourceTree = "<group>"; };
+		F06B83031E0398B400BDEF73 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F06B83041E0398B400BDEF73 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F06B83051E0398B400BDEF73 /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
+		F06B83061E0398B400BDEF73 /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
+		F06B830A1E03995700BDEF73 /* UIColor+randomColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+randomColor.h"; sourceTree = "<group>"; };
+		F06B830B1E03995700BDEF73 /* UIColor+randomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+randomColor.m"; sourceTree = "<group>"; };
+		F06B830D1E03BC0800BDEF73 /* SonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SonViewController.h; sourceTree = "<group>"; };
+		F06B830E1E03BC0800BDEF73 /* SonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SonViewController.m; sourceTree = "<group>"; };
+		F06B830F1E03BC0800BDEF73 /* SonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SonViewController.xib; sourceTree = "<group>"; };
 		F0755F781DE6ED8F005EFCFD /* videoEdit.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = videoEdit.pch; sourceTree = "<group>"; };
 		F0755F791DE6EE25005EFCFD /* GlobalDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalDefine.h; sourceTree = "<group>"; };
 		F0B621401DF7F455006E371B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		F0B621421DF80620006E371B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		FB1431B21C02B6B1000AB3A4 /* scrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scrollViewController.h; sourceTree = "<group>"; };
-		FB1431B31C02B6B1000AB3A4 /* scrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = scrollViewController.m; sourceTree = "<group>"; };
-		FB1431B81C02BDAE000AB3A4 /* UIColor+randomColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+randomColor.h"; sourceTree = "<group>"; };
-		FB1431B91C02BDAE000AB3A4 /* UIColor+randomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+randomColor.m"; sourceTree = "<group>"; };
-		FB1431BB1C02DA31000AB3A4 /* 123.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 123.jpg; sourceTree = "<group>"; };
-		FB1431C01C02E718000AB3A4 /* hideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hideViewController.h; sourceTree = "<group>"; };
-		FB1431C11C02E718000AB3A4 /* hideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hideViewController.m; sourceTree = "<group>"; };
 		FB2FA0031BE999CB008B22F6 /* myApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB2FA0071BE999CB008B22F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FB2FA0091BE999CB008B22F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		FB2FA00A1BE999CB008B22F6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FB2FA00C1BE999CB008B22F6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FB2FA00D1BE999CB008B22F6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FB2FA0101BE999CB008B22F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB2FA0121BE999CB008B22F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB2FA0151BE999CB008B22F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB2FA0171BE999CB008B22F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FB2FA0391BE99AE6008B22F6 /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
-		FB2FA03A1BE99AE6008B22F6 /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
 		FB2FA03F1BE99ECC008B22F6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB2FA0401BE99ECC008B22F6 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		FB2FA0411BE99ECC008B22F6 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
@@ -236,22 +259,6 @@
 		FB2FA0561BE99ECC008B22F6 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		FB2FA0571BE99ECC008B22F6 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		FB2FA0581BE99ECC008B22F6 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
-		FB4821631BFC19F000139B82 /* constantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constantViewController.h; sourceTree = "<group>"; };
-		FB4821641BFC19F000139B82 /* constantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = constantViewController.m; sourceTree = "<group>"; };
-		FB4821661BFC261E00139B82 /* marginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = marginViewController.h; sourceTree = "<group>"; };
-		FB4821671BFC261E00139B82 /* marginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = marginViewController.m; sourceTree = "<group>"; };
-		FB5178E21BFB217200ABAF40 /* updataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = updataViewController.h; sourceTree = "<group>"; };
-		FB5178E31BFB217200ABAF40 /* updataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = updataViewController.m; sourceTree = "<group>"; };
-		FB5178E51BFB2C1900ABAF40 /* remakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = remakeViewController.h; sourceTree = "<group>"; };
-		FB5178E61BFB2C1900ABAF40 /* remakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = remakeViewController.m; sourceTree = "<group>"; };
-		FB5F9E5A1C0BF80E001C0215 /* emitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = emitterViewController.h; sourceTree = "<group>"; };
-		FB5F9E5B1C0BF80E001C0215 /* emitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = emitterViewController.m; sourceTree = "<group>"; };
-		FB5F9E5D1C0BFA5C001C0215 /* 111.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 111.png; sourceTree = "<group>"; };
-		FB5F9E5F1C0BFA6D001C0215 /* 222.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 222.png; sourceTree = "<group>"; };
-		FB5F9E611C0BFF73001C0215 /* point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = point.png; sourceTree = "<group>"; };
-		FB5F9E631C0C003D001C0215 /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white.png; sourceTree = "<group>"; };
-		FBE429991BFF16FB007EE1E5 /* arrayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arrayViewController.h; sourceTree = "<group>"; };
-		FBE4299A1BFF16FB007EE1E5 /* arrayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = arrayViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,29 +290,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F062D2C31DD9BCD400DE9725 /* videoEdit */ = {
-			isa = PBXGroup;
-			children = (
-				F062D2C41DD9C08500DE9725 /* mainViewController.h */,
-				F062D2C51DD9C08500DE9725 /* mainViewController.m */,
-				F062D2C61DD9C08500DE9725 /* mainViewController.xib */,
-				F0247C631DFB33310065BF80 /* customAVPlayerViewController.h */,
-				F0247C641DFB33310065BF80 /* customAVPlayerViewController.m */,
-				F0247C651DFB33310065BF80 /* customAVPlayerViewController.xib */,
-				F0755F731DE6E219005EFCFD /* customCamraViewController.h */,
-				F0755F741DE6E219005EFCFD /* customCamraViewController.m */,
-				F0755F751DE6E219005EFCFD /* customCamraViewController.xib */,
-			);
-			path = videoEdit;
-			sourceTree = "<group>";
-		};
 		F0692B0A1E01551200A8CF5A /* FFmpeg-iOS */ = {
 			isa = PBXGroup;
 			children = (
 				F0692B0B1E01551200A8CF5A /* include */,
 				F0692B721E01551200A8CF5A /* lib */,
 			);
-			path = "FFmpeg-iOS";
+			name = "FFmpeg-iOS";
+			path = "masonryTest/FFmpeg-iOS";
 			sourceTree = "<group>";
 		};
 		F0692B0B1E01551200A8CF5A /* include */ = {
@@ -490,6 +482,83 @@
 			path = lib;
 			sourceTree = "<group>";
 		};
+		F06B82C91E03953D00BDEF73 /* AVMedia */ = {
+			isa = PBXGroup;
+			children = (
+				F06B82CA1E03953D00BDEF73 /* customAVPlayerViewController.h */,
+				F06B82CB1E03953D00BDEF73 /* customAVPlayerViewController.m */,
+				F06B82CC1E03953D00BDEF73 /* customAVPlayerViewController.xib */,
+				F06B82CD1E03953D00BDEF73 /* customCamraViewController.h */,
+				F06B82CE1E03953D00BDEF73 /* customCamraViewController.m */,
+				F06B82CF1E03953D00BDEF73 /* customCamraViewController.xib */,
+				F06B82D01E03953D00BDEF73 /* mainViewController.h */,
+				F06B82D11E03953D00BDEF73 /* mainViewController.m */,
+				F06B82D21E03953D00BDEF73 /* mainViewController.xib */,
+			);
+			path = AVMedia;
+			sourceTree = "<group>";
+		};
+		F06B82D91E0396A500BDEF73 /* masonryLayout */ = {
+			isa = PBXGroup;
+			children = (
+				F06B82DA1E0396A500BDEF73 /* arrayViewController.h */,
+				F06B82DB1E0396A500BDEF73 /* arrayViewController.m */,
+				F06B82DC1E0396A500BDEF73 /* constantViewController.h */,
+				F06B82DD1E0396A500BDEF73 /* constantViewController.m */,
+				F06B82DE1E0396A500BDEF73 /* emitterViewController.h */,
+				F06B82DF1E0396A500BDEF73 /* emitterViewController.m */,
+				F06B82E01E0396A500BDEF73 /* hideViewController.h */,
+				F06B82E11E0396A500BDEF73 /* hideViewController.m */,
+				F06B82E21E0396A500BDEF73 /* marginViewController.h */,
+				F06B82E31E0396A500BDEF73 /* marginViewController.m */,
+				F06B82E41E0396A500BDEF73 /* remakeViewController.h */,
+				F06B82E51E0396A500BDEF73 /* remakeViewController.m */,
+				F06B82E61E0396A500BDEF73 /* scrollViewController.h */,
+				F06B82E71E0396A500BDEF73 /* scrollViewController.m */,
+				F06B82E81E0396A500BDEF73 /* updataViewController.h */,
+				F06B82E91E0396A500BDEF73 /* updataViewController.m */,
+				F06B82EA1E0396A500BDEF73 /* ViewController.h */,
+				F06B82EB1E0396A500BDEF73 /* ViewController.m */,
+			);
+			path = masonryLayout;
+			sourceTree = "<group>";
+		};
+		F06B82F51E03979B00BDEF73 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				F06B82F61E03979B00BDEF73 /* 111.png */,
+				F06B82F71E03979B00BDEF73 /* 123.jpg */,
+				F06B82F81E03979B00BDEF73 /* 222.png */,
+				F06B82F91E03979B00BDEF73 /* point.png */,
+				F06B82FA1E03979B00BDEF73 /* WeChatSight.mp4 */,
+				F06B82FB1E03979B00BDEF73 /* white.png */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		F06B83021E0398B400BDEF73 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				F06B83031E0398B400BDEF73 /* AppDelegate.h */,
+				F06B83041E0398B400BDEF73 /* AppDelegate.m */,
+				F06B83051E0398B400BDEF73 /* MyTableViewController.h */,
+				F06B83061E0398B400BDEF73 /* MyTableViewController.m */,
+				F06B830D1E03BC0800BDEF73 /* SonViewController.h */,
+				F06B830E1E03BC0800BDEF73 /* SonViewController.m */,
+				F06B830F1E03BC0800BDEF73 /* SonViewController.xib */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		F06B83091E03995700BDEF73 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				F06B830A1E03995700BDEF73 /* UIColor+randomColor.h */,
+				F06B830B1E03995700BDEF73 /* UIColor+randomColor.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 		F0B6213F1DF7F454006E371B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -508,8 +577,9 @@
 		FB2F9FFA1BE999CB008B22F6 = {
 			isa = PBXGroup;
 			children = (
-				F062D2C31DD9BCD400DE9725 /* videoEdit */,
 				FB2FA0051BE999CB008B22F6 /* masonryTest */,
+				F0692B0A1E01551200A8CF5A /* FFmpeg-iOS */,
+				FB2FA03E1BE99ECC008B22F6 /* Masonry */,
 				FB2FA0041BE999CB008B22F6 /* Products */,
 				F0B6213F1DF7F454006E371B /* Frameworks */,
 			);
@@ -526,42 +596,11 @@
 		FB2FA0051BE999CB008B22F6 /* masonryTest */ = {
 			isa = PBXGroup;
 			children = (
-				F0247C691DFB3FA00065BF80 /* WeChatSight.mp4 */,
-				FB2FA0091BE999CB008B22F6 /* AppDelegate.h */,
-				FB2FA00A1BE999CB008B22F6 /* AppDelegate.m */,
-				FB2FA00C1BE999CB008B22F6 /* ViewController.h */,
-				FB2FA00D1BE999CB008B22F6 /* ViewController.m */,
-				FB5178E21BFB217200ABAF40 /* updataViewController.h */,
-				FB5178E31BFB217200ABAF40 /* updataViewController.m */,
-				FB5178E51BFB2C1900ABAF40 /* remakeViewController.h */,
-				FB5178E61BFB2C1900ABAF40 /* remakeViewController.m */,
-				FB4821631BFC19F000139B82 /* constantViewController.h */,
-				FB4821641BFC19F000139B82 /* constantViewController.m */,
-				FB4821661BFC261E00139B82 /* marginViewController.h */,
-				FB4821671BFC261E00139B82 /* marginViewController.m */,
-				FBE429991BFF16FB007EE1E5 /* arrayViewController.h */,
-				FBE4299A1BFF16FB007EE1E5 /* arrayViewController.m */,
-				FB1431C01C02E718000AB3A4 /* hideViewController.h */,
-				FB1431C11C02E718000AB3A4 /* hideViewController.m */,
-				FB1431B21C02B6B1000AB3A4 /* scrollViewController.h */,
-				FB1431B31C02B6B1000AB3A4 /* scrollViewController.m */,
-				FB2FA0391BE99AE6008B22F6 /* MyTableViewController.h */,
-				FB2FA03A1BE99AE6008B22F6 /* MyTableViewController.m */,
-				FB5F9E5A1C0BF80E001C0215 /* emitterViewController.h */,
-				FB5F9E5B1C0BF80E001C0215 /* emitterViewController.m */,
-				FB1431B81C02BDAE000AB3A4 /* UIColor+randomColor.h */,
-				FB1431B91C02BDAE000AB3A4 /* UIColor+randomColor.m */,
-				FB5F9E5D1C0BFA5C001C0215 /* 111.png */,
-				FB5F9E5F1C0BFA6D001C0215 /* 222.png */,
-				FB1431BB1C02DA31000AB3A4 /* 123.jpg */,
-				FB5F9E611C0BFF73001C0215 /* point.png */,
-				FB5F9E631C0C003D001C0215 /* white.png */,
-				FB2FA00F1BE999CB008B22F6 /* Main.storyboard */,
-				FB2FA0121BE999CB008B22F6 /* Assets.xcassets */,
-				FB2FA0141BE999CB008B22F6 /* LaunchScreen.storyboard */,
-				FB2FA0171BE999CB008B22F6 /* Info.plist */,
-				F0692B0A1E01551200A8CF5A /* FFmpeg-iOS */,
-				FB2FA03E1BE99ECC008B22F6 /* Masonry */,
+				F06B83091E03995700BDEF73 /* Tool */,
+				F06B83021E0398B400BDEF73 /* main */,
+				F06B82F51E03979B00BDEF73 /* resources */,
+				F06B82D91E0396A500BDEF73 /* masonryLayout */,
+				F06B82C91E03953D00BDEF73 /* AVMedia */,
 				FB2FA0061BE999CB008B22F6 /* Supporting Files */,
 			);
 			path = masonryTest;
@@ -570,9 +609,14 @@
 		FB2FA0061BE999CB008B22F6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FB2FA00F1BE999CB008B22F6 /* Main.storyboard */,
+				FB2FA0121BE999CB008B22F6 /* Assets.xcassets */,
+				FB2FA0141BE999CB008B22F6 /* LaunchScreen.storyboard */,
+				FB2FA0171BE999CB008B22F6 /* Info.plist */,
 				FB2FA0071BE999CB008B22F6 /* main.m */,
 				F0755F781DE6ED8F005EFCFD /* videoEdit.pch */,
 				F0755F791DE6EE25005EFCFD /* GlobalDefine.h */,
+				F06B82C71E0389E700BDEF73 /* config.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -607,7 +651,8 @@
 				FB2FA0571BE99ECC008B22F6 /* ViewController+MASAdditions.h */,
 				FB2FA0581BE99ECC008B22F6 /* ViewController+MASAdditions.m */,
 			);
-			path = Masonry;
+			name = Masonry;
+			path = masonryTest/Masonry;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -668,19 +713,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F06B82C81E0389E700BDEF73 /* config.plist in Resources */,
 				FB2FA0591BE99ECC008B22F6 /* Info.plist in Resources */,
-				F062D2C81DD9C08500DE9725 /* mainViewController.xib in Resources */,
-				F0247C671DFB33310065BF80 /* customAVPlayerViewController.xib in Resources */,
-				FB5F9E5E1C0BFA5C001C0215 /* 111.png in Resources */,
-				F0755F771DE6E219005EFCFD /* customCamraViewController.xib in Resources */,
-				FB5F9E641C0C003D001C0215 /* white.png in Resources */,
+				F06B82FC1E03979B00BDEF73 /* 111.png in Resources */,
+				F06B82FE1E03979B00BDEF73 /* 222.png in Resources */,
+				F06B83011E03979B00BDEF73 /* white.png in Resources */,
 				FB2FA0161BE999CB008B22F6 /* LaunchScreen.storyboard in Resources */,
 				FB2FA0131BE999CB008B22F6 /* Assets.xcassets in Resources */,
-				FB1431BC1C02DA31000AB3A4 /* 123.jpg in Resources */,
+				F06B82D81E03953D00BDEF73 /* mainViewController.xib in Resources */,
 				FB2FA0111BE999CB008B22F6 /* Main.storyboard in Resources */,
-				FB5F9E621C0BFF73001C0215 /* point.png in Resources */,
-				FB5F9E601C0BFA6D001C0215 /* 222.png in Resources */,
-				F0247C6A1DFB3FA00065BF80 /* WeChatSight.mp4 in Resources */,
+				F06B82D41E03953D00BDEF73 /* customAVPlayerViewController.xib in Resources */,
+				F06B83001E03979B00BDEF73 /* WeChatSight.mp4 in Resources */,
+				F06B83111E03BC0800BDEF73 /* SonViewController.xib in Resources */,
+				F06B82D61E03953D00BDEF73 /* customCamraViewController.xib in Resources */,
+				F06B82FD1E03979B00BDEF73 /* 123.jpg in Resources */,
+				F06B82FF1E03979B00BDEF73 /* point.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -691,32 +738,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F06B82F01E0396A500BDEF73 /* marginViewController.m in Sources */,
+				F06B82ED1E0396A500BDEF73 /* constantViewController.m in Sources */,
+				F06B83071E0398B400BDEF73 /* AppDelegate.m in Sources */,
 				FB2FA05C1BE99ECC008B22F6 /* MASConstraintMaker.m in Sources */,
-				FB2FA00E1BE999CB008B22F6 /* ViewController.m in Sources */,
-				FB2FA00B1BE999CB008B22F6 /* AppDelegate.m in Sources */,
-				F062D2C71DD9C08500DE9725 /* mainViewController.m in Sources */,
+				F06B82EE1E0396A500BDEF73 /* emitterViewController.m in Sources */,
+				F06B82F11E0396A500BDEF73 /* remakeViewController.m in Sources */,
+				F06B83101E03BC0800BDEF73 /* SonViewController.m in Sources */,
 				FB2FA05B1BE99ECC008B22F6 /* MASConstraint.m in Sources */,
-				FB4821651BFC19F000139B82 /* constantViewController.m in Sources */,
+				F06B82D71E03953D00BDEF73 /* mainViewController.m in Sources */,
 				FB2FA0631BE99ECC008B22F6 /* ViewController+MASAdditions.m in Sources */,
-				FB4821681BFC261E00139B82 /* marginViewController.m in Sources */,
-				FB5178E71BFB2C1900ABAF40 /* remakeViewController.m in Sources */,
-				FB1431BA1C02BDAE000AB3A4 /* UIColor+randomColor.m in Sources */,
-				FBE4299B1BFF16FB007EE1E5 /* arrayViewController.m in Sources */,
+				F06B83081E0398B400BDEF73 /* MyTableViewController.m in Sources */,
+				F06B82F41E0396A500BDEF73 /* ViewController.m in Sources */,
 				FB2FA05D1BE99ECC008B22F6 /* MASLayoutConstraint.m in Sources */,
+				F06B82F21E0396A500BDEF73 /* scrollViewController.m in Sources */,
+				F06B82F31E0396A500BDEF73 /* updataViewController.m in Sources */,
 				FB2FA0601BE99ECC008B22F6 /* NSArray+MASAdditions.m in Sources */,
-				FB1431C21C02E718000AB3A4 /* hideViewController.m in Sources */,
-				F0755F761DE6E219005EFCFD /* customCamraViewController.m in Sources */,
 				FB2FA05F1BE99ECC008B22F6 /* MASViewConstraint.m in Sources */,
+				F06B830C1E03995700BDEF73 /* UIColor+randomColor.m in Sources */,
+				F06B82D51E03953D00BDEF73 /* customCamraViewController.m in Sources */,
 				FB2FA05E1BE99ECC008B22F6 /* MASViewAttribute.m in Sources */,
-				FB5178E41BFB217200ABAF40 /* updataViewController.m in Sources */,
 				FB2FA0621BE99ECC008B22F6 /* View+MASAdditions.m in Sources */,
 				FB2FA0081BE999CB008B22F6 /* main.m in Sources */,
-				FB5F9E5C1C0BF80E001C0215 /* emitterViewController.m in Sources */,
-				FB2FA03B1BE99AE6008B22F6 /* MyTableViewController.m in Sources */,
+				F06B82D31E03953D00BDEF73 /* customAVPlayerViewController.m in Sources */,
+				F06B82EF1E0396A500BDEF73 /* hideViewController.m in Sources */,
 				FB2FA05A1BE99ECC008B22F6 /* MASCompositeConstraint.m in Sources */,
 				FB2FA0611BE99ECC008B22F6 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
-				FB1431B41C02B6B1000AB3A4 /* scrollViewController.m in Sources */,
-				F0247C661DFB33310065BF80 /* customAVPlayerViewController.m in Sources */,
+				F06B82EC1E0396A500BDEF73 /* arrayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

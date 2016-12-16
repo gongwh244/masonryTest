@@ -24,7 +24,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self initAVCaptureSession];
+    
+    if (TARGET_IPHONE_SIMULATOR) {
+        NSLog(@"模拟器不支持拍照");
+    }else{
+        [self initAVCaptureSession];
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated{
