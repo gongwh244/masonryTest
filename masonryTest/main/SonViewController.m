@@ -56,6 +56,7 @@
     NSDictionary *dic = self.dicArray[indexPath.row];
     NSLog(@"className = %@",[dic objectForKey:@"className"]);
     id myObj = [[NSClassFromString([dic objectForKey:@"className"]) alloc] init];
+    
     [self.navigationController pushViewController:myObj animated:YES];
 }
 

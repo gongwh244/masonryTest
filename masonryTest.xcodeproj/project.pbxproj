@@ -52,6 +52,8 @@
 		F06B83111E03BC0800BDEF73 /* SonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F06B830F1E03BC0800BDEF73 /* SonViewController.xib */; };
 		F0B621411DF7F455006E371B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0B621401DF7F455006E371B /* MobileCoreServices.framework */; };
 		F0B621431DF80620006E371B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0B621421DF80620006E371B /* MediaPlayer.framework */; };
+		F0F813CA1E03DC610000EBBD /* VideoDecodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F813C81E03DC610000EBBD /* VideoDecodeViewController.m */; };
+		F0F813CB1E03DC610000EBBD /* VideoDecodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0F813C91E03DC610000EBBD /* VideoDecodeViewController.xib */; };
 		FB2FA0081BE999CB008B22F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2FA0071BE999CB008B22F6 /* main.m */; };
 		FB2FA0111BE999CB008B22F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB2FA00F1BE999CB008B22F6 /* Main.storyboard */; };
 		FB2FA0131BE999CB008B22F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB2FA0121BE999CB008B22F6 /* Assets.xcassets */; };
@@ -227,6 +229,9 @@
 		F0755F791DE6EE25005EFCFD /* GlobalDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalDefine.h; sourceTree = "<group>"; };
 		F0B621401DF7F455006E371B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		F0B621421DF80620006E371B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		F0F813C71E03DC610000EBBD /* VideoDecodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoDecodeViewController.h; sourceTree = "<group>"; };
+		F0F813C81E03DC610000EBBD /* VideoDecodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoDecodeViewController.m; sourceTree = "<group>"; };
+		F0F813C91E03DC610000EBBD /* VideoDecodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoDecodeViewController.xib; sourceTree = "<group>"; };
 		FB2FA0031BE999CB008B22F6 /* myApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB2FA0071BE999CB008B22F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FB2FA0101BE999CB008B22F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -494,6 +499,9 @@
 				F06B82D01E03953D00BDEF73 /* mainViewController.h */,
 				F06B82D11E03953D00BDEF73 /* mainViewController.m */,
 				F06B82D21E03953D00BDEF73 /* mainViewController.xib */,
+				F0F813C71E03DC610000EBBD /* VideoDecodeViewController.h */,
+				F0F813C81E03DC610000EBBD /* VideoDecodeViewController.m */,
+				F0F813C91E03DC610000EBBD /* VideoDecodeViewController.xib */,
 			);
 			path = AVMedia;
 			sourceTree = "<group>";
@@ -721,6 +729,7 @@
 				FB2FA0161BE999CB008B22F6 /* LaunchScreen.storyboard in Resources */,
 				FB2FA0131BE999CB008B22F6 /* Assets.xcassets in Resources */,
 				F06B82D81E03953D00BDEF73 /* mainViewController.xib in Resources */,
+				F0F813CB1E03DC610000EBBD /* VideoDecodeViewController.xib in Resources */,
 				FB2FA0111BE999CB008B22F6 /* Main.storyboard in Resources */,
 				F06B82D41E03953D00BDEF73 /* customAVPlayerViewController.xib in Resources */,
 				F06B83001E03979B00BDEF73 /* WeChatSight.mp4 in Resources */,
@@ -754,6 +763,7 @@
 				F06B82F21E0396A500BDEF73 /* scrollViewController.m in Sources */,
 				F06B82F31E0396A500BDEF73 /* updataViewController.m in Sources */,
 				FB2FA0601BE99ECC008B22F6 /* NSArray+MASAdditions.m in Sources */,
+				F0F813CA1E03DC610000EBBD /* VideoDecodeViewController.m in Sources */,
 				FB2FA05F1BE99ECC008B22F6 /* MASViewConstraint.m in Sources */,
 				F06B830C1E03995700BDEF73 /* UIColor+randomColor.m in Sources */,
 				F06B82D51E03953D00BDEF73 /* customCamraViewController.m in Sources */,
