@@ -61,6 +61,12 @@
 				<key>className</key>
 				<string>emitterViewController</string>
 			</dict>
+			<dict>
+				<key>titleName</key>
+				<string>Test</string>
+				<key>className</key>
+				<string>TestViewController</string>
+			</dict>
 		</array>
 	</dict>
 	<dict>

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F04EBF201E0D0BD000ED5469 /* GoodsFormSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F04EBF1F1E0D0BD000ED5469 /* GoodsFormSelectViewController.m */; };
+		F04EBF241E0D0C2900ED5469 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F04EBF221E0D0C2900ED5469 /* TestViewController.m */; };
+		F04EBF251E0D0C2900ED5469 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F04EBF231E0D0C2900ED5469 /* TestViewController.xib */; };
 		F05F836C1DFFC4F8001A33E8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F05F836B1DFFC4F8001A33E8 /* AVFoundation.framework */; };
 		F05F836E1DFFC506001A33E8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F05F836D1DFFC506001A33E8 /* CoreMedia.framework */; };
 		F0692A0A1E01235500A8CF5A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F0692A091E01235500A8CF5A /* libz.tbd */; };
@@ -72,6 +75,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F04EBF1E1E0D0BD000ED5469 /* GoodsFormSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsFormSelectViewController.h; sourceTree = "<group>"; };
+		F04EBF1F1E0D0BD000ED5469 /* GoodsFormSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsFormSelectViewController.m; sourceTree = "<group>"; };
+		F04EBF211E0D0C2900ED5469 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		F04EBF221E0D0C2900ED5469 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		F04EBF231E0D0C2900ED5469 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		F05F836B1DFFC4F8001A33E8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F05F836D1DFFC506001A33E8 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		F0692A091E01235500A8CF5A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -527,6 +535,11 @@
 				F06B82E91E0396A500BDEF73 /* updataViewController.m */,
 				F06B82EA1E0396A500BDEF73 /* ViewController.h */,
 				F06B82EB1E0396A500BDEF73 /* ViewController.m */,
+				F04EBF211E0D0C2900ED5469 /* TestViewController.h */,
+				F04EBF221E0D0C2900ED5469 /* TestViewController.m */,
+				F04EBF231E0D0C2900ED5469 /* TestViewController.xib */,
+				F04EBF1E1E0D0BD000ED5469 /* GoodsFormSelectViewController.h */,
+				F04EBF1F1E0D0BD000ED5469 /* GoodsFormSelectViewController.m */,
 			);
 			path = masonryLayout;
 			sourceTree = "<group>";
@@ -731,6 +744,7 @@
 				F06B82D81E03953D00BDEF73 /* mainViewController.xib in Resources */,
 				F0F813CB1E03DC610000EBBD /* VideoDecodeViewController.xib in Resources */,
 				FB2FA0111BE999CB008B22F6 /* Main.storyboard in Resources */,
+				F04EBF251E0D0C2900ED5469 /* TestViewController.xib in Resources */,
 				F06B82D41E03953D00BDEF73 /* customAVPlayerViewController.xib in Resources */,
 				F06B83001E03979B00BDEF73 /* WeChatSight.mp4 in Resources */,
 				F06B83111E03BC0800BDEF73 /* SonViewController.xib in Resources */,
@@ -768,8 +782,10 @@
 				F06B830C1E03995700BDEF73 /* UIColor+randomColor.m in Sources */,
 				F06B82D51E03953D00BDEF73 /* customCamraViewController.m in Sources */,
 				FB2FA05E1BE99ECC008B22F6 /* MASViewAttribute.m in Sources */,
+				F04EBF201E0D0BD000ED5469 /* GoodsFormSelectViewController.m in Sources */,
 				FB2FA0621BE99ECC008B22F6 /* View+MASAdditions.m in Sources */,
 				FB2FA0081BE999CB008B22F6 /* main.m in Sources */,
+				F04EBF241E0D0C2900ED5469 /* TestViewController.m in Sources */,
 				F06B82D31E03953D00BDEF73 /* customAVPlayerViewController.m in Sources */,
 				F06B82EF1E0396A500BDEF73 /* hideViewController.m in Sources */,
 				FB2FA05A1BE99ECC008B22F6 /* MASCompositeConstraint.m in Sources */,

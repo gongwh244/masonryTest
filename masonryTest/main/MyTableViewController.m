@@ -36,6 +36,7 @@
     [super viewDidLoad];
     self.navigationController.navigationBar.translucent = NO;
     self.title = @"RootVC";
+    self.navigationController.view.backgroundColor = [UIColor whiteColor];
     
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"config" ofType:@"plist"];
     _dataArray = [NSArray arrayWithContentsOfFile:plistPath];
@@ -43,7 +44,51 @@
         UIView *view = [[UIView alloc] init];
         view;
     });
+    
+    
+    [self timeTest];
 }
+
+
+
+- (void)timeTest{
+    
+    NSString *time1 = @"2016-12-22 22:30:00";
+    NSString *time2 = @"2016-12-21 22:30:30";
+    
+    
+    NSCalendar *gregorian = [[NSCalendar alloc]
+                             initWithCalendarIdentifier:NSGregorianCalendar];
+    [gregorian setFirstWeekday:2];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    
+    NSDate *toDate = [dateFormatter dateFromString:time1];
+//    NSDate *fromDate = [NSDate date];
+    NSDate *fromDate = [dateFormatter dateFromString:time2];
+    
+    
+    
+    
+    NSDateComponents *secondComp = [gregorian components:NSCalendarUnitSecond fromDate:fromDate toDate:toDate options:0];
+    NSDateComponents *minuteComp = [gregorian components:NSCalendarUnitMinute fromDate:fromDate toDate:toDate options:0];
+    NSDateComponents *hourComp = [gregorian components:NSCalendarUnitHour fromDate:fromDate toDate:toDate options:0];
+    
+    NSLog(@"second = %ld",secondComp.second);
+    NSLog(@"minute = %ld",minuteComp.minute);
+    NSLog(@"hour = %ld",hourComp.hour);
+    
+}
+
+
+
+
+
+
+
+
+
+
 
 
 #pragma mark - Table view data source
