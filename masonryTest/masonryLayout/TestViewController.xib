@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestViewController">
             <connections>
+                <outlet property="myWeb" destination="MeY-Ne-z59" id="f4f-aG-Pf4"/>
+                <outlet property="textField" destination="5Yp-9f-q7H" id="3Xs-iZ-Q9L"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,17 +21,59 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZp-ZM-fj5">
-                    <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZp-ZM-fj5">
+                    <rect key="frame" x="0.0" y="0.0" width="46" height="40"/>
                     <color key="backgroundColor" red="1" green="0.56078431370000004" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="show"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="dxp-qI-CPb"/>
+                        <constraint firstAttribute="height" constant="40" id="w0N-Wi-6Ef"/>
+                    </constraints>
+                    <state key="normal" title="load"/>
                     <connections>
-                        <action selector="showBtnClick:" destination="-1" eventType="touchUpInside" id="Ohl-UV-lZa"/>
+                        <action selector="click:" destination="-1" eventType="touchUpInside" id="2nc-ev-P3c"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请粘贴你要访问的网址" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Yp-9f-q7H">
+                    <rect key="frame" x="46" y="0.0" width="289" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="BFV-0x-sml"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MeY-Ne-z59">
+                    <rect key="frame" x="0.0" y="40" width="375" height="627"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </webView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPp-mn-xiY">
+                    <rect key="frame" x="335" y="0.0" width="40" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.56078431370000004" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="tQh-vn-8fE"/>
+                        <constraint firstAttribute="width" constant="40" id="vln-bq-gLI"/>
+                    </constraints>
+                    <state key="normal" title="clear"/>
+                    <connections>
+                        <action selector="clear:" destination="-1" eventType="touchUpInside" id="u92-pj-Mg0"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="GPp-mn-xiY" secondAttribute="trailing" id="6wV-ZA-9Cw"/>
+                <constraint firstItem="MZp-ZM-fj5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BvO-VY-rau"/>
+                <constraint firstItem="MeY-Ne-z59" firstAttribute="top" secondItem="5Yp-9f-q7H" secondAttribute="bottom" id="EoV-WA-dZt"/>
+                <constraint firstItem="5Yp-9f-q7H" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Lrh-EZ-2QJ"/>
+                <constraint firstItem="GPp-mn-xiY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="NHI-jv-409"/>
+                <constraint firstItem="5Yp-9f-q7H" firstAttribute="leading" secondItem="MZp-ZM-fj5" secondAttribute="trailing" id="YSV-qa-ssb"/>
+                <constraint firstItem="MZp-ZM-fj5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dU9-OU-kuf"/>
+                <constraint firstAttribute="trailing" secondItem="MeY-Ne-z59" secondAttribute="trailing" id="dlU-Wl-xaf"/>
+                <constraint firstAttribute="bottom" secondItem="MeY-Ne-z59" secondAttribute="bottom" id="paS-65-ssF"/>
+                <constraint firstItem="MeY-Ne-z59" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vAN-y9-iof"/>
+                <constraint firstAttribute="trailing" secondItem="5Yp-9f-q7H" secondAttribute="trailing" constant="40" id="yw3-06-A3s"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
         </view>
     </objects>
 </document>

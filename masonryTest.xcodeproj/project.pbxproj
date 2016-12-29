@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F00905851E14DC2E00881CC6 /* FormSelectSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = F00905841E14DC2E00881CC6 /* FormSelectSheet.m */; };
 		F04EBF201E0D0BD000ED5469 /* GoodsFormSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F04EBF1F1E0D0BD000ED5469 /* GoodsFormSelectViewController.m */; };
 		F04EBF241E0D0C2900ED5469 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F04EBF221E0D0C2900ED5469 /* TestViewController.m */; };
 		F04EBF251E0D0C2900ED5469 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F04EBF231E0D0C2900ED5469 /* TestViewController.xib */; };
@@ -75,6 +76,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F00905831E14DC2E00881CC6 /* FormSelectSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormSelectSheet.h; sourceTree = "<group>"; };
+		F00905841E14DC2E00881CC6 /* FormSelectSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormSelectSheet.m; sourceTree = "<group>"; };
 		F04EBF1E1E0D0BD000ED5469 /* GoodsFormSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsFormSelectViewController.h; sourceTree = "<group>"; };
 		F04EBF1F1E0D0BD000ED5469 /* GoodsFormSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsFormSelectViewController.m; sourceTree = "<group>"; };
 		F04EBF211E0D0C2900ED5469 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
@@ -540,6 +543,8 @@
 				F04EBF231E0D0C2900ED5469 /* TestViewController.xib */,
 				F04EBF1E1E0D0BD000ED5469 /* GoodsFormSelectViewController.h */,
 				F04EBF1F1E0D0BD000ED5469 /* GoodsFormSelectViewController.m */,
+				F00905831E14DC2E00881CC6 /* FormSelectSheet.h */,
+				F00905841E14DC2E00881CC6 /* FormSelectSheet.m */,
 			);
 			path = masonryLayout;
 			sourceTree = "<group>";
@@ -775,6 +780,7 @@
 				F06B82F41E0396A500BDEF73 /* ViewController.m in Sources */,
 				FB2FA05D1BE99ECC008B22F6 /* MASLayoutConstraint.m in Sources */,
 				F06B82F21E0396A500BDEF73 /* scrollViewController.m in Sources */,
+				F00905851E14DC2E00881CC6 /* FormSelectSheet.m in Sources */,
 				F06B82F31E0396A500BDEF73 /* updataViewController.m in Sources */,
 				FB2FA0601BE99ECC008B22F6 /* NSArray+MASAdditions.m in Sources */,
 				F0F813CA1E03DC610000EBBD /* VideoDecodeViewController.m in Sources */,

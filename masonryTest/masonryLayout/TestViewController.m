@@ -8,9 +8,14 @@
 
 #import "TestViewController.h"
 #import "GoodsFormSelectViewController.h"
+#import <WebKit/WebKit.h>
+#import "FormSelectSheet.h"
 
-@interface TestViewController ()
+@interface TestViewController ()<UIWebViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (nonatomic,strong) NSURLRequest *request;
+@property (weak, nonatomic) IBOutlet UIWebView *myWeb;
 @end
 
 @implementation TestViewController
@@ -19,35 +24,54 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blueColor];
     
-    UITapGestureRecognizer *gg = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hehe)];
-    [self.view addGestureRecognizer:gg];
+    self.myWeb.delegate = self;
 }
-- (void)hehe{
-    NSLog(@"000");
+- (IBAction)click:(id)sender {
+    NSLog(@"load");
+//    self.request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://192.168.1.253:8513/"]];
+    
+    [self addWindows];
+    
+    
+    
+    /*
+    UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, Screen_width, Screen_height - 64)];
+    [self.view addSubview:webView];
+    webView.delegate = self;
+    [webView loadRequest:self.request];
+    */
+}
+
+- (void)addWindows{
+    
+    FormSelectSheet *sheet = [[FormSelectSheet alloc] init];
+    [sheet showSheet];
+    
+}
+
+#pragma mark - WebView Delegate
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType{
+    
+    NSString *reqString = [[[request URL] absoluteString] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    
+    if ([reqString containsString:@"weixin://"]) {//拦截url，截取参数，
+        NSArray *arr = [reqString componentsSeparatedByString:@"?"];
+        NSString*valStr = arr[1];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@?%@",arr[0],[self urlEncode:valStr]]]];// 对参数进行urlencode，拼接上scheme。
+    }
+    return YES;
+}
+
+- (NSString *)urlEncode:(NSString *)url{
+    return [url stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+}
+
+- (IBAction)clear:(id)sender {
+    self.textField.text = @"";
+    NSLog(@"clear");
 }
 
 
-- (IBAction)showBtnClick:(id)sender {
-    
-//    UIWindow *window = [[[UIApplication sharedApplication] windows] objectAtIndex:0];
-//    GoodsFormSelectViewController *vc = [[GoodsFormSelectViewController alloc] init];
-//    vc.view.frame = CGRectMake(0, 0, Screen_width, Screen_height);
-//    [window addSubview:vc.view];
-//    //vc.view.hidden = YES;
-//    
-//    [UIView animateWithDuration:1 animations:^{
-//        
-//        vc.view.backgroundColor = [UIColor colorWithRed:51.0f/255 green:51.0f/255 blue:51.0f/255 alpha:0.6f];
-//        vc.view.hidden = NO;
-//        
-//    } completion:^(BOOL finished) {
-//        
-//    }];
-    
-    GoodsFormSelectViewController *vc = [[GoodsFormSelectViewController alloc] init];
-    [vc showFormsSelectViewController];
-    
-    
-}
+
 
 @end

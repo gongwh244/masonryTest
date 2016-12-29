@@ -10,8 +10,6 @@
 
 @interface GoodsFormSelectViewController : UIViewController
 
-- (void)showFormsSelectViewController;
 
-- (void)dismissFormsSelectViewController;
 
 @end
