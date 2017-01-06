@@ -10,5 +10,6 @@
 #define videoEdit_pch
 
 #import "GlobalDefine.h"
+#import "EXTScope.h"
 
 #endif /* videoEdit_pch */

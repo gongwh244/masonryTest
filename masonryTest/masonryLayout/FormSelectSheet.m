@@ -42,14 +42,18 @@
     vc.view.frame = CGRectMake(0, Screen_height * 0.5, Screen_width, Screen_height);
     [self.rootView addSubview:vc.view];
     [window addSubview:self.rootView];
-//    [UIView animateWithDuration:0.3 animations:^{
-//        
-//        vc.view.backgroundColor = [UIColor colorWithRed:51.0f/255 green:51.0f/255 blue:51.0f/255 alpha:0.6f];
-//        vc.view.frame = CGRectMake(0, 0, Screen_width, Screen_height);
-//        
-//    } completion:^(BOOL finished) {
-//        
-//    }];
+    
+    
+    @weakify(self)
+    [UIView animateWithDuration:0.3 animations:^{
+        @strongify(self)
+        self.rootView.backgroundColor = [UIColor redColor];
+        vc.view.backgroundColor = [UIColor colorWithRed:51.0f/255 green:51.0f/255 blue:51.0f/255 alpha:0.6f];
+        vc.view.frame = CGRectMake(0, 0, Screen_width, Screen_height);
+        
+    } completion:^(BOOL finished) {
+        
+    }];
 }
 
 - (void)dismissSheet{

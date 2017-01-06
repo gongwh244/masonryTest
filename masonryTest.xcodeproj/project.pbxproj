@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F00905851E14DC2E00881CC6 /* FormSelectSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = F00905841E14DC2E00881CC6 /* FormSelectSheet.m */; };
+		F0476E101E1F8F9500770949 /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = F0476E0E1E1F8F9500770949 /* EXTScope.m */; };
 		F04EBF201E0D0BD000ED5469 /* GoodsFormSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F04EBF1F1E0D0BD000ED5469 /* GoodsFormSelectViewController.m */; };
 		F04EBF241E0D0C2900ED5469 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F04EBF221E0D0C2900ED5469 /* TestViewController.m */; };
 		F04EBF251E0D0C2900ED5469 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F04EBF231E0D0C2900ED5469 /* TestViewController.xib */; };
@@ -78,6 +79,9 @@
 /* Begin PBXFileReference section */
 		F00905831E14DC2E00881CC6 /* FormSelectSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormSelectSheet.h; sourceTree = "<group>"; };
 		F00905841E14DC2E00881CC6 /* FormSelectSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormSelectSheet.m; sourceTree = "<group>"; };
+		F0476E0D1E1F8F9500770949 /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
+		F0476E0E1E1F8F9500770949 /* EXTScope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTScope.m; sourceTree = "<group>"; };
+		F0476E0F1E1F8F9500770949 /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
 		F04EBF1E1E0D0BD000ED5469 /* GoodsFormSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsFormSelectViewController.h; sourceTree = "<group>"; };
 		F04EBF1F1E0D0BD000ED5469 /* GoodsFormSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsFormSelectViewController.m; sourceTree = "<group>"; };
 		F04EBF211E0D0C2900ED5469 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
@@ -306,6 +310,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F0476E0C1E1F8F9500770949 /* libextobjc */ = {
+			isa = PBXGroup;
+			children = (
+				F0476E0D1E1F8F9500770949 /* EXTScope.h */,
+				F0476E0E1E1F8F9500770949 /* EXTScope.m */,
+				F0476E0F1E1F8F9500770949 /* metamacros.h */,
+			);
+			path = libextobjc;
+			sourceTree = "<group>";
+		};
 		F0692B0A1E01551200A8CF5A /* FFmpeg-iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -579,6 +593,7 @@
 		F06B83091E03995700BDEF73 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				F0476E0C1E1F8F9500770949 /* libextobjc */,
 				F06B830A1E03995700BDEF73 /* UIColor+randomColor.h */,
 				F06B830B1E03995700BDEF73 /* UIColor+randomColor.m */,
 			);
@@ -782,6 +797,7 @@
 				F06B82F21E0396A500BDEF73 /* scrollViewController.m in Sources */,
 				F00905851E14DC2E00881CC6 /* FormSelectSheet.m in Sources */,
 				F06B82F31E0396A500BDEF73 /* updataViewController.m in Sources */,
+				F0476E101E1F8F9500770949 /* EXTScope.m in Sources */,
 				FB2FA0601BE99ECC008B22F6 /* NSArray+MASAdditions.m in Sources */,
 				F0F813CA1E03DC610000EBBD /* VideoDecodeViewController.m in Sources */,
 				FB2FA05F1BE99ECC008B22F6 /* MASViewConstraint.m in Sources */,
