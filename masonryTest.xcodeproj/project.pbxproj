@@ -13,8 +13,13 @@
 		F04EBF201E0D0BD000ED5469 /* GoodsFormSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F04EBF1F1E0D0BD000ED5469 /* GoodsFormSelectViewController.m */; };
 		F04EBF241E0D0C2900ED5469 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F04EBF221E0D0C2900ED5469 /* TestViewController.m */; };
 		F04EBF251E0D0C2900ED5469 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F04EBF231E0D0C2900ED5469 /* TestViewController.xib */; };
+		F059C1B31E4D89B1005EFE71 /* WeiboCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F059C1B21E4D89B1005EFE71 /* WeiboCell.m */; };
 		F05F836C1DFFC4F8001A33E8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F05F836B1DFFC4F8001A33E8 /* AVFoundation.framework */; };
 		F05F836E1DFFC506001A33E8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F05F836D1DFFC506001A33E8 /* CoreMedia.framework */; };
+		F068B6301E4C0733009C2A57 /* MvvmTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F068B62F1E4C0733009C2A57 /* MvvmTestViewController.m */; };
+		F068B6331E4C0A2F009C2A57 /* MvvmViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F068B6321E4C0A2F009C2A57 /* MvvmViewModel.m */; };
+		F068B6361E4C1471009C2A57 /* HttpRequestManage.m in Sources */ = {isa = PBXBuildFile; fileRef = F068B6351E4C1471009C2A57 /* HttpRequestManage.m */; };
+		F068B6391E4C3CA0009C2A57 /* WeiBoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F068B6381E4C3CA0009C2A57 /* WeiBoModel.m */; };
 		F0692A0A1E01235500A8CF5A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F0692A091E01235500A8CF5A /* libz.tbd */; };
 		F0692A0C1E01236700A8CF5A /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F0692A0B1E01236700A8CF5A /* libbz2.tbd */; };
 		F0692A0E1E01237700A8CF5A /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F0692A0D1E01237700A8CF5A /* libiconv.tbd */; };
@@ -80,8 +85,18 @@
 		F04EBF211E0D0C2900ED5469 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		F04EBF221E0D0C2900ED5469 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		F04EBF231E0D0C2900ED5469 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		F059C1B11E4D89B1005EFE71 /* WeiboCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboCell.h; sourceTree = "<group>"; };
+		F059C1B21E4D89B1005EFE71 /* WeiboCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiboCell.m; sourceTree = "<group>"; };
 		F05F836B1DFFC4F8001A33E8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F05F836D1DFFC506001A33E8 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		F068B62E1E4C0733009C2A57 /* MvvmTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MvvmTestViewController.h; sourceTree = "<group>"; };
+		F068B62F1E4C0733009C2A57 /* MvvmTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MvvmTestViewController.m; sourceTree = "<group>"; };
+		F068B6311E4C0A2F009C2A57 /* MvvmViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MvvmViewModel.h; sourceTree = "<group>"; };
+		F068B6321E4C0A2F009C2A57 /* MvvmViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MvvmViewModel.m; sourceTree = "<group>"; };
+		F068B6341E4C1471009C2A57 /* HttpRequestManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequestManage.h; sourceTree = "<group>"; };
+		F068B6351E4C1471009C2A57 /* HttpRequestManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequestManage.m; sourceTree = "<group>"; };
+		F068B6371E4C3CA0009C2A57 /* WeiBoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiBoModel.h; sourceTree = "<group>"; };
+		F068B6381E4C3CA0009C2A57 /* WeiBoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiBoModel.m; sourceTree = "<group>"; };
 		F0692A091E01235500A8CF5A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		F0692A0B1E01236700A8CF5A /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
 		F0692A0D1E01237700A8CF5A /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
@@ -295,6 +310,23 @@
 				F0476E0F1E1F8F9500770949 /* metamacros.h */,
 			);
 			path = libextobjc;
+			sourceTree = "<group>";
+		};
+		F068B62D1E4C06FF009C2A57 /* mvvmTest */ = {
+			isa = PBXGroup;
+			children = (
+				F068B62E1E4C0733009C2A57 /* MvvmTestViewController.h */,
+				F068B62F1E4C0733009C2A57 /* MvvmTestViewController.m */,
+				F068B6311E4C0A2F009C2A57 /* MvvmViewModel.h */,
+				F068B6321E4C0A2F009C2A57 /* MvvmViewModel.m */,
+				F059C1B11E4D89B1005EFE71 /* WeiboCell.h */,
+				F059C1B21E4D89B1005EFE71 /* WeiboCell.m */,
+				F068B6371E4C3CA0009C2A57 /* WeiBoModel.h */,
+				F068B6381E4C3CA0009C2A57 /* WeiBoModel.m */,
+				F068B6341E4C1471009C2A57 /* HttpRequestManage.h */,
+				F068B6351E4C1471009C2A57 /* HttpRequestManage.m */,
+			);
+			path = mvvmTest;
 			sourceTree = "<group>";
 		};
 		F0692B0A1E01551200A8CF5A /* FFmpeg-iOS */ = {
@@ -536,6 +568,7 @@
 				F04EBF1F1E0D0BD000ED5469 /* GoodsFormSelectViewController.m */,
 				F00905831E14DC2E00881CC6 /* FormSelectSheet.h */,
 				F00905841E14DC2E00881CC6 /* FormSelectSheet.m */,
+				F068B62D1E4C06FF009C2A57 /* mvvmTest */,
 			);
 			path = masonryLayout;
 			sourceTree = "<group>";
@@ -777,6 +810,7 @@
 			files = (
 				F06B82F01E0396A500BDEF73 /* marginViewController.m in Sources */,
 				F06B82ED1E0396A500BDEF73 /* constantViewController.m in Sources */,
+				F068B6361E4C1471009C2A57 /* HttpRequestManage.m in Sources */,
 				F06B83071E0398B400BDEF73 /* AppDelegate.m in Sources */,
 				F06B82EE1E0396A500BDEF73 /* emitterViewController.m in Sources */,
 				F06B82F11E0396A500BDEF73 /* remakeViewController.m in Sources */,
@@ -786,14 +820,18 @@
 				F06B82F41E0396A500BDEF73 /* ViewController.m in Sources */,
 				F06B82F21E0396A500BDEF73 /* scrollViewController.m in Sources */,
 				F00905851E14DC2E00881CC6 /* FormSelectSheet.m in Sources */,
+				F068B6391E4C3CA0009C2A57 /* WeiBoModel.m in Sources */,
 				F06B82F31E0396A500BDEF73 /* updataViewController.m in Sources */,
+				F068B6331E4C0A2F009C2A57 /* MvvmViewModel.m in Sources */,
 				F0476E101E1F8F9500770949 /* EXTScope.m in Sources */,
 				F0F813CA1E03DC610000EBBD /* VideoDecodeViewController.m in Sources */,
 				F06B830C1E03995700BDEF73 /* UIColor+randomColor.m in Sources */,
 				F06B82D51E03953D00BDEF73 /* customCamraViewController.m in Sources */,
+				F068B6301E4C0733009C2A57 /* MvvmTestViewController.m in Sources */,
 				F04EBF201E0D0BD000ED5469 /* GoodsFormSelectViewController.m in Sources */,
 				FB2FA0081BE999CB008B22F6 /* main.m in Sources */,
 				F04EBF241E0D0C2900ED5469 /* TestViewController.m in Sources */,
+				F059C1B31E4D89B1005EFE71 /* WeiboCell.m in Sources */,
 				F06B82D31E03953D00BDEF73 /* customAVPlayerViewController.m in Sources */,
 				F06B82EF1E0396A500BDEF73 /* hideViewController.m in Sources */,
 				F06B82EC1E0396A500BDEF73 /* arrayViewController.m in Sources */,

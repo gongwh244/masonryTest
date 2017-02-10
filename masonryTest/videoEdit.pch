@@ -11,5 +11,7 @@
 
 #import "GlobalDefine.h"
 #import "EXTScope.h"
+#import "AFNetworking.h"
+#import "MBProgressHUD.h"
 
 #endif /* videoEdit_pch */

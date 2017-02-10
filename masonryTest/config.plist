@@ -67,6 +67,12 @@
 				<key>className</key>
 				<string>TestViewController</string>
 			</dict>
+			<dict>
+				<key>titleName</key>
+				<string>MVVM</string>
+				<key>className</key>
+				<string>MvvmTestViewController</string>
+			</dict>
 		</array>
 	</dict>
 	<dict>
