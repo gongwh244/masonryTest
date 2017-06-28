@@ -79,6 +79,12 @@
 				<key>className</key>
 				<string>PhotoEditViewController</string>
 			</dict>
+			<dict>
+				<key>titleName</key>
+				<string>Sqlite</string>
+				<key>className</key>
+				<string>SqliteViewController</string>
+			</dict>
 		</array>
 	</dict>
 	<dict>

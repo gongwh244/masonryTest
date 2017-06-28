@@ -63,6 +63,12 @@
 		F06B83111E03BC0800BDEF73 /* SonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F06B830F1E03BC0800BDEF73 /* SonViewController.xib */; };
 		F07632681E81256C00AE221C /* PhotoEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F07632671E81256C00AE221C /* PhotoEditViewController.m */; };
 		F076326B1E8126D600AE221C /* ZoomImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F076326A1E8126D600AE221C /* ZoomImageViewController.m */; };
+		F082AA701EA467AE0047CC42 /* SqliteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F082AA6F1EA467AE0047CC42 /* SqliteViewController.m */; };
+		F085EF8F1E88F7620008C0D7 /* UIBarButtonItem+WZLBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = F085EF831E88F7620008C0D7 /* UIBarButtonItem+WZLBadge.m */; };
+		F085EF901E88F7620008C0D7 /* UITabBarItem+WZLBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = F085EF851E88F7620008C0D7 /* UITabBarItem+WZLBadge.m */; };
+		F085EF911E88F7620008C0D7 /* CAAnimation+WAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = F085EF881E88F7620008C0D7 /* CAAnimation+WAnimation.m */; };
+		F085EF921E88F7620008C0D7 /* UIView+WZLBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = F085EF8D1E88F7620008C0D7 /* UIView+WZLBadge.m */; };
+		F08C95631F03C07400C21588 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = F08C95621F03C07400C21588 /* Calculator.m */; };
 		F0B621411DF7F455006E371B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0B621401DF7F455006E371B /* MobileCoreServices.framework */; };
 		F0B621431DF80620006E371B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0B621421DF80620006E371B /* MediaPlayer.framework */; };
 		F0F813CA1E03DC610000EBBD /* VideoDecodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F813C81E03DC610000EBBD /* VideoDecodeViewController.m */; };
@@ -256,6 +262,20 @@
 		F07632671E81256C00AE221C /* PhotoEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoEditViewController.m; sourceTree = "<group>"; };
 		F07632691E8126D600AE221C /* ZoomImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoomImageViewController.h; sourceTree = "<group>"; };
 		F076326A1E8126D600AE221C /* ZoomImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoomImageViewController.m; sourceTree = "<group>"; };
+		F082AA6E1EA467AE0047CC42 /* SqliteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqliteViewController.h; sourceTree = "<group>"; };
+		F082AA6F1EA467AE0047CC42 /* SqliteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SqliteViewController.m; sourceTree = "<group>"; };
+		F085EF821E88F7620008C0D7 /* UIBarButtonItem+WZLBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+WZLBadge.h"; sourceTree = "<group>"; };
+		F085EF831E88F7620008C0D7 /* UIBarButtonItem+WZLBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+WZLBadge.m"; sourceTree = "<group>"; };
+		F085EF841E88F7620008C0D7 /* UITabBarItem+WZLBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+WZLBadge.h"; sourceTree = "<group>"; };
+		F085EF851E88F7620008C0D7 /* UITabBarItem+WZLBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+WZLBadge.m"; sourceTree = "<group>"; };
+		F085EF871E88F7620008C0D7 /* CAAnimation+WAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+WAnimation.h"; sourceTree = "<group>"; };
+		F085EF881E88F7620008C0D7 /* CAAnimation+WAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+WAnimation.m"; sourceTree = "<group>"; };
+		F085EF8A1E88F7620008C0D7 /* WZLBadgeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZLBadgeProtocol.h; sourceTree = "<group>"; };
+		F085EF8C1E88F7620008C0D7 /* UIView+WZLBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WZLBadge.h"; sourceTree = "<group>"; };
+		F085EF8D1E88F7620008C0D7 /* UIView+WZLBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WZLBadge.m"; sourceTree = "<group>"; };
+		F085EF8E1E88F7620008C0D7 /* WZLBadgeImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZLBadgeImport.h; sourceTree = "<group>"; };
+		F08C95611F03C07400C21588 /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		F08C95621F03C07400C21588 /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 		F0B621401DF7F455006E371B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		F0B621421DF80620006E371B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		F0F813C71E03DC610000EBBD /* VideoDecodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoDecodeViewController.h; sourceTree = "<group>"; };
@@ -575,6 +595,10 @@
 				F04EBF1F1E0D0BD000ED5469 /* GoodsFormSelectViewController.m */,
 				F00905831E14DC2E00881CC6 /* FormSelectSheet.h */,
 				F00905841E14DC2E00881CC6 /* FormSelectSheet.m */,
+				F082AA6E1EA467AE0047CC42 /* SqliteViewController.h */,
+				F082AA6F1EA467AE0047CC42 /* SqliteViewController.m */,
+				F08C95611F03C07400C21588 /* Calculator.h */,
+				F08C95621F03C07400C21588 /* Calculator.m */,
 				F068B62D1E4C06FF009C2A57 /* mvvmTest */,
 			);
 			path = masonryLayout;
@@ -610,6 +634,7 @@
 		F06B83091E03995700BDEF73 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				F085EF801E88F7620008C0D7 /* WZLBadge */,
 				F0476E0C1E1F8F9500770949 /* libextobjc */,
 				F06B830A1E03995700BDEF73 /* UIColor+randomColor.h */,
 				F06B830B1E03995700BDEF73 /* UIColor+randomColor.m */,
@@ -626,6 +651,55 @@
 				F076326A1E8126D600AE221C /* ZoomImageViewController.m */,
 			);
 			path = photoEdit;
+			sourceTree = "<group>";
+		};
+		F085EF801E88F7620008C0D7 /* WZLBadge */ = {
+			isa = PBXGroup;
+			children = (
+				F085EF811E88F7620008C0D7 /* BarItem */,
+				F085EF861E88F7620008C0D7 /* CategorySupport */,
+				F085EF891E88F7620008C0D7 /* Protocol */,
+				F085EF8B1E88F7620008C0D7 /* View */,
+				F085EF8E1E88F7620008C0D7 /* WZLBadgeImport.h */,
+			);
+			path = WZLBadge;
+			sourceTree = "<group>";
+		};
+		F085EF811E88F7620008C0D7 /* BarItem */ = {
+			isa = PBXGroup;
+			children = (
+				F085EF821E88F7620008C0D7 /* UIBarButtonItem+WZLBadge.h */,
+				F085EF831E88F7620008C0D7 /* UIBarButtonItem+WZLBadge.m */,
+				F085EF841E88F7620008C0D7 /* UITabBarItem+WZLBadge.h */,
+				F085EF851E88F7620008C0D7 /* UITabBarItem+WZLBadge.m */,
+			);
+			path = BarItem;
+			sourceTree = "<group>";
+		};
+		F085EF861E88F7620008C0D7 /* CategorySupport */ = {
+			isa = PBXGroup;
+			children = (
+				F085EF871E88F7620008C0D7 /* CAAnimation+WAnimation.h */,
+				F085EF881E88F7620008C0D7 /* CAAnimation+WAnimation.m */,
+			);
+			path = CategorySupport;
+			sourceTree = "<group>";
+		};
+		F085EF891E88F7620008C0D7 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F085EF8A1E88F7620008C0D7 /* WZLBadgeProtocol.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		F085EF8B1E88F7620008C0D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F085EF8C1E88F7620008C0D7 /* UIView+WZLBadge.h */,
+				F085EF8D1E88F7620008C0D7 /* UIView+WZLBadge.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F0B6213F1DF7F454006E371B /* Frameworks */ = {
@@ -834,6 +908,7 @@
 				F06B82F11E0396A500BDEF73 /* remakeViewController.m in Sources */,
 				F06B83101E03BC0800BDEF73 /* SonViewController.m in Sources */,
 				F06B82D71E03953D00BDEF73 /* mainViewController.m in Sources */,
+				F082AA701EA467AE0047CC42 /* SqliteViewController.m in Sources */,
 				F06B83081E0398B400BDEF73 /* MyTableViewController.m in Sources */,
 				F06B82F41E0396A500BDEF73 /* ViewController.m in Sources */,
 				F06B82F21E0396A500BDEF73 /* scrollViewController.m in Sources */,
@@ -842,17 +917,22 @@
 				F068B6391E4C3CA0009C2A57 /* WeiBoModel.m in Sources */,
 				F06B82F31E0396A500BDEF73 /* updataViewController.m in Sources */,
 				F068B6331E4C0A2F009C2A57 /* MvvmViewModel.m in Sources */,
+				F085EF921E88F7620008C0D7 /* UIView+WZLBadge.m in Sources */,
+				F085EF8F1E88F7620008C0D7 /* UIBarButtonItem+WZLBadge.m in Sources */,
 				F0476E101E1F8F9500770949 /* EXTScope.m in Sources */,
 				F0F813CA1E03DC610000EBBD /* VideoDecodeViewController.m in Sources */,
 				F06B830C1E03995700BDEF73 /* UIColor+randomColor.m in Sources */,
 				F06B82D51E03953D00BDEF73 /* customCamraViewController.m in Sources */,
 				F068B6301E4C0733009C2A57 /* MvvmTestViewController.m in Sources */,
+				F08C95631F03C07400C21588 /* Calculator.m in Sources */,
 				F04EBF201E0D0BD000ED5469 /* GoodsFormSelectViewController.m in Sources */,
 				FB2FA0081BE999CB008B22F6 /* main.m in Sources */,
 				F076326B1E8126D600AE221C /* ZoomImageViewController.m in Sources */,
+				F085EF911E88F7620008C0D7 /* CAAnimation+WAnimation.m in Sources */,
 				F04EBF241E0D0C2900ED5469 /* TestViewController.m in Sources */,
 				F059C1B31E4D89B1005EFE71 /* WeiboCell.m in Sources */,
 				F06B82D31E03953D00BDEF73 /* customAVPlayerViewController.m in Sources */,
+				F085EF901E88F7620008C0D7 /* UITabBarItem+WZLBadge.m in Sources */,
 				F06B82EF1E0396A500BDEF73 /* hideViewController.m in Sources */,
 				F06B82EC1E0396A500BDEF73 /* arrayViewController.m in Sources */,
 			);
