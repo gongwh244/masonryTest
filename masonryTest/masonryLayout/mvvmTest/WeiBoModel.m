@@ -10,4 +10,12 @@
 
 @implementation WeiBoModel
 
+- (instancetype)init{
+    self = [super init];
+    if (self) {
+        self.cellHeight = 0;
+    }
+    return self;
+}
+
 @end

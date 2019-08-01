@@ -10,11 +10,14 @@
 
 @interface WeiBoModel : NSObject
 
+@property (nonatomic,assign) CGFloat cellHeight;
+
 @property (strong, nonatomic) NSString *userId;
 @property (strong, nonatomic) NSString *weiboId;
 @property (strong, nonatomic) NSString *userName;
 @property (strong, nonatomic) NSURL *imageUrl;
 @property (strong, nonatomic) NSString *date;
 @property (strong, nonatomic) NSString *text;
+
 
 @end

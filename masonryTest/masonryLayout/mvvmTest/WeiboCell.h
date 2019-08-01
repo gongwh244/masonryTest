@@ -7,11 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-@class WeiBoModel;
+#import "WeiBoModel.h"
+typedef void (^ReloadDataBlock)(void);
+
 @interface WeiboCell : UITableViewCell
 
 + (WeiboCell *)cellWithTableView:(UITableView *)tableView;
 
 - (void)refreshCellWithData:(WeiBoModel *)model;
+
+- (CGFloat)cellHeightWithModel:(WeiBoModel *)model;
+
+@property (nonatomic,copy) ReloadDataBlock myBlock;
 
 @end

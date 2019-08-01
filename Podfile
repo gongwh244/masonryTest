@@ -8,4 +8,5 @@ pod 'MBProgressHUD','~> 1.0.0'
 pod 'SDWebImage','~>3.8'
 pod 'FMDB'
 pod 'HHRouter','~> 0.1.8'
+pod 'FPSLabel','~> 1.0.1'
 end

@@ -63,6 +63,10 @@
         publicModel.userId = statuses[i][USER][UID];
         publicModel.weiboId = statuses[i][WEIBOID];
         
+        
+        NSString *str = [NSString stringWithFormat:@"userId = %@;weiboId = %@;userName = %@;imageUrl = %@;date = %@;text = %@;",publicModel.userId,publicModel.weiboId,publicModel.userName,publicModel.imageUrl,publicModel.date,publicModel.text];
+        NSLog(@"model = %@",str);
+        
         [publicModelArray addObject:publicModel];
         
     }

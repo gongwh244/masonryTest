@@ -10,13 +10,13 @@
 #import "MvvmViewModel.h"
 #import "WeiboCell.h"
 
-
 @interface MvvmTestViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong)UITableView *tableView;
 
 @property (nonatomic,strong)NSArray *dataArr;
 
+@property (nonatomic,strong) WeiboCell *tmpCell;
 @end
 
 @implementation MvvmTestViewController
@@ -26,6 +26,7 @@
         _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, Screen_width, Screen_height - 64)];
         _tableView.delegate = self;
         _tableView.dataSource = self;
+        _tableView.rowHeight = UITableViewAutomaticDimension;
     }
     return _tableView;
 }
@@ -34,9 +35,8 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"MVVM";
-    
+    self.tmpCell = [WeiboCell new];
     [self.view addSubview:self.tableView];
-    
     [self getRequest];
 }
 
@@ -61,10 +61,6 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.dataArr.count;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 144;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
